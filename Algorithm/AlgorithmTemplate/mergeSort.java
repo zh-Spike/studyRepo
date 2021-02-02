@@ -1,4 +1,5 @@
 class Solution {
+    // 逆序对为例
     public int reversePairs(int[] arr) {
         if (arr == null || arr.length < 2) {
             return 0;
