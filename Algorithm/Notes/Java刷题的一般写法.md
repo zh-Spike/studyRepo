@@ -1066,3 +1066,5 @@ flag = !flag;
 Random rand = new Random();
 rand.nextInt(n);//[0,n)
 ```
+
+参考了[RenKeXZ](https://hexuezhi.github.io/2020/09/24/java%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0)
