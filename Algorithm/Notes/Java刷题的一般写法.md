@@ -1,3 +1,5 @@
+[toc]
+
 # 一. 集合 Collection
 
 ali 开发手册：
@@ -144,6 +146,7 @@ ali 开发手册：
     modCount 赋值给 expectedModCount，如果这两个数据不相等，则抛出异常。java.util 下的所有集合类都是 fail-fast。
 
     [from 武培轩](https://www.cnblogs.com/wupeixuan/p/11974270.html)
+
 ## 1. 数组 Array
 
 ### 1.1 新建数组
@@ -960,14 +963,14 @@ E getFirst()
 E peekFirst()
 ```
 
-# 二. 杂
+# 二. 杂项
 
-### 1. 三元运算符
+## 1. 三元运算符
 ```java
 return (res == 8) ? true : false;
 ```
 
-### 2. Math 用法
+## 2. Math 用法
 ```java
 int a = Math.max(2,3);
 int a = Math.sqrt(4);//开根号
@@ -975,20 +978,20 @@ int a = Math.abs(-1);//取绝对值
 int a = Math.pow(2,3);//2的3次方
 ```
 
-### 3. 最大值、最小值表示
+## 3. 最大值、最小值表示
 ```java
 int a = Integer.MAX_VALUE
 int b = Integer.MIN_VALUE
 ```
 
-### 4. Arrays
+## 4. Arrays
 ```java
 Arrays.sort(a);//排序int[] a
 Arrays.fill(a,Integer.MAX_VALUE);//快速向a中填充最大值
 Arrays.copyOf(nums,nums.length);//复制数组
 ```
 
-### 5. 位运算
+## 5. 位运算
 
 位运算后，需要重新赋值
 
@@ -1011,26 +1014,26 @@ a = a >>> 1;
 
 ```
 
-### 6. 转换
+## 6. 转换
 
-#### 6.1 char转int
+### 6.1 char转int
 ```java
 // 本质是 ASCII 值
 char ch = 'x';
 int x = 'x' - 'a';
 ```
 
-#### 6.2 int转char
+### 6.2 int转char
 ```java
 char ch = (char)(num + 'a');
 ```
 
-#### 6.3 char转String
+### 6.3 char转String
 ```java
 String s = String.valueOf(ch);
 ```
 
-#### 6.4 char[]转Stirng
+### 6.4 char[]转Stirng
 ```java
 char[] chs = new char[n];
 String s = new String(chs);
@@ -1046,22 +1049,22 @@ String s = "" + 'c';
 // new StringBuilder().append("").append('c').toString();
 ```
 
-#### 6.5 String转char
+### 6.5 String转char
 ```java
 s.charAt(i);
 ```
 
-#### 6.6 String转char[]
+### 6.6 String转char[]
 ```java
 char[] chs = s.toCharArray();
 ```
 
-### 7 flag取反
+## 7 flag取反
 ```java
 flag = !flag;
 ```
 
-### 8 随机数
+## 8 随机数
 ```java
 Random rand = new Random();
 rand.nextInt(n);//[0,n)
