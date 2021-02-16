@@ -686,11 +686,11 @@ stack.peek();
 !stack.isEmpty()
 ```
 ### 5.6 方法实现
-|Stack| ArrayDeque |LinkedList  |
-|---|---|---|
-|push(e)|addFirst(e)/offerFirst(e)|addFirst(e)/offerFirst(e)|
-pop()|removeFirst()/pollFirst()|removeFirst()/pollFirst()|
-peek()|getFirst()/peekFirst()|getFirst()/peekFirst()
+| Stack   | ArrayDeque                | LinkedList                |
+| ------- | ------------------------- | ------------------------- |
+| push(e) | addFirst(e)/offerFirst(e) | addFirst(e)/offerFirst(e) |
+| pop()   | removeFirst()/pollFirst() | removeFirst()/pollFirst() |
+| peek()  | getFirst()/peekFirst()    | getFirst()/peekFirst()    |
 
 ## 6. Queue
 
@@ -871,22 +871,22 @@ System.out.println(res.contains(1));
 
 Summary of Deque methods
 
-|---|First Element (Head)|同左|Last Element (Tail)|同左|
-|---|---|---|---|---|
-|---|Throws exception	|Special value	|Throws exception	|Special value|
-|Insert |	addFirst(e)|	offerFirst(e)|	addLast(e)	|offerLast(e) |
-Remove	|removeFirst()	|pollFirst()	|removeLast()	|pollLast()|
-|Examine	|getFirst()	|peekFirst()|	getLast()	|peekLast()|
+| ---     | First Element (Head) | 同左          | Last Element (Tail) | 同左          |
+| ------- | -------------------- | ------------- | ------------------- | ------------- |
+| ---     | Throws exception     | Special value | Throws exception    | Special value |
+| Insert  | addFirst(e)          | offerFirst(e) | addLast(e)          | offerLast(e)  |
+| Remove  | removeFirst()        | pollFirst()   | removeLast()        | pollLast()    |
+| Examine | getFirst()           | peekFirst()   | getLast()           | peekLast()    |
 
 
 
 Comparison of Stack and Deque methods
 
-|Stack Method	|Equivalent Deque Method|
-|---|---|
-|push(e)	|addFirst(e)
-pop()|	removeFirst()
-peek()|	peekFirst()
+| Stack Method | Equivalent Deque Method |
+| ------------ | ----------------------- |
+| push(e)      | addFirst(e)             |
+| pop()        | removeFirst()           |
+| peek()       | peekFirst()             |
 
 ### 8.1 实例化
 ```java
