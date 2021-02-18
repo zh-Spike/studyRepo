@@ -1,3 +1,7 @@
+- [KMP](#kmp)
+    - [Code](#code)
+- [Manacher](#manacher)
+    - [Code](#code-1)
 # KMP
 
 啊这 该学 KMP 了
@@ -111,6 +115,7 @@ KMP的最重要的部分就是确定 最长前缀匹配数组
         
     回文子串更新后 相应 R C 位置也要更新 
 
+### Code
     
 ```java
 public class Code02_Manacher {
