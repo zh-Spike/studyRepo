@@ -95,9 +95,9 @@ plugins:
   - git-revision-date
 
 plugins:
-  # - git-revision-date-localized:
-  #     type: iso_datetime
-  #     fallback_to_build_date: true
+  - git-revision-date-localized:
+      type: iso_datetime
+      fallback_to_build_date: true
   - git-revision-date:
       enabled_if_env: CI
 
