@@ -91,9 +91,7 @@ plugins:
 
 plugins:
   - search:
-      lang: 
-        - en
-        - ja
+      prebuild_index: true
   - git-revision-date-localized:
       type: iso_datetime
       fallback_to_build_date: true
