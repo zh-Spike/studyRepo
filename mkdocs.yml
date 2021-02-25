@@ -95,11 +95,8 @@ plugins:
   - git-revision-date
 
 plugins:
-  # - git-revision-date-localized:
-  #     type: datetime
-  #     fallback_to_build_date: true
   - git-revision-date:
-      enabled_if_env: CI
+      enabled_if_env: CII
 
 # Content
 nav:
