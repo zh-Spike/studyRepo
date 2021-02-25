@@ -41,7 +41,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/zh-Spike
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<zh-spike@outlook.com>
+      link: mailto:zh-spike@outlook.com
 
 extra_javascript:
   - '_static/js/extra.js?v=16'
