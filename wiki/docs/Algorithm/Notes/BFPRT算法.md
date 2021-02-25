@@ -1,6 +1,7 @@
 - [BFPRT 算法解决 TopK 问题](#bfprt-算法解决-topk-问题)
-	- [Why 5 ？](#why-5-)
-# BFPRT 算法解决 TopK 问题
+- [Why 5 ？](#why-5-)
+
+## BFPRT 算法解决 TopK 问题
 
 在一大堆数中求其前k大或前k小的问题，简称TOP-K问题。而目前解决TOP-K问题最有效的算法即是BFPRT算法，其又称为中位数的中位数算法，该算法由Blum、Floyd、Pratt、Rivest、Tarjan提出，最坏时间复杂度为O(n)。
 
