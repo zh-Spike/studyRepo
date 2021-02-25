@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/zh-Spike/studyRepo.svg?branch=main)](https://travis-ci.com/zh-Spike/studyRepo)
 # studyRepo
 学习笔记（目前是牛客网左程云的算法课）
 
@@ -11,3 +12,7 @@
 ***
 ### Java
 *** 
+
+## MkDoc
+
+https://zh-spike.github.io/studyRepo/
