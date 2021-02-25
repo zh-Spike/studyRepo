@@ -126,7 +126,15 @@ nav:
       - LRU & LFU: Algorithm/Notes/Algorithm/LRU & LFU.md
       - Morris遍历: Algorithm/Notes/Algorithm/Morris遍历.md
     - 技巧:
-      - 
+      - 从暴力哥到DP: Algorithm/Notes/Strategy/从暴力哥到DP.md
+      - 打表找规律: Algorithm/Notes/Strategy/打表找规律.md
+      - 大数据: Algorithm/Notes/Strategy/大数据.md
+      - 拒绝采样问题: Algorithm/Notes/Strategy/概率转化(拒绝采样)问题.md
+      - 哈希函数: Algorithm/Notes/Strategy/哈希函数.md
+      - 滑窗: Algorithm/Notes/Strategy/滑窗.md
+      - 树形DP: Algorithm/Notes/Strategy/树形DP.md
+      - 预处理: Algorithm/Notes/Strategy/预处理.md
+      - 卡塔兰数: Algorithm/Notes/Strategy/卡塔兰数.md
   - Java:
     - Arrays.asList()解读: Java/Arrays.asList() 源码解析.md
     - Deque: Java/该用Deque了.md
