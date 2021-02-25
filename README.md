@@ -18,4 +18,6 @@
 
 ## MkDoc
 
+Github + Travis + Mkdocs 搭建文档库 自动装配
+
 https://zh-spike.github.io/studyRepo/
