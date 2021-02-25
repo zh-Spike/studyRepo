@@ -87,8 +87,13 @@ markdown_extensions:
 plugins:
   - git-revision-date-localized
   - git-revision-date
+  - search
 
 plugins:
+  - search:
+      lang: 
+        - en
+        - ja
   - git-revision-date-localized:
       type: iso_datetime
       fallback_to_build_date: true
