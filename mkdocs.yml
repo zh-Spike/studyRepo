@@ -91,6 +91,7 @@ plugins:
 
 plugins:
   - search:
+      lang: ja
       prebuild_index: true
   - git-revision-date-localized:
       type: iso_datetime
