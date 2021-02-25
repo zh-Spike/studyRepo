@@ -95,25 +95,38 @@ plugins:
   - git-revision-date
 
 plugins:
-  - git-revision-date-localized:
-      type: datetime
-      fallback_to_build_date: true
+  # - git-revision-date-localized:
+  #     type: datetime
+  #     fallback_to_build_date: true
   - git-revision-date:
       enabled_if_env: CI
 
 # Content
 nav:
-  - 简介: index.md
+  - 简介: 
+    - 简介: index.md
+    - about: about.md
   - DataStructure:
     - Java刷题的一般写法: Algorithm/Notes/Java刷题的一般写法.md
+    - 数据结构:
+      - Queue&Stack: Algorithm/Notes/DataStructure/Queue&Stack.md
+      - 二叉树: Algorithm/Notes/DataStructure/二叉树.md
+      - 矩阵: Algorithm/Notes/DataStructure/矩阵.md
+      - 链表: Algorithm/Notes/DataStructure/链表.md
+      - 排序: Algorithm/Notes/DataStructure/排序.md
+      - 图: Algorithm/Notes/DataStructure/图.md
     - 高级数据结构:
-      - 高级数据结构: Algorithm/Notes/高级数据结构.md
-      - 并查集: Algorithm/Notes/并查集.md
-      - 单调栈: Algorithm/Notes/单调栈.md
+      - 高级数据结构: Algorithm/Notes/AdvancedDataStructure/高级数据结构.md
+      - 并查集: Algorithm/Notes/AdvancedDataStructure/并查集.md
+      - 单调栈: Algorithm/Notes/AdvancedDataStructure/单调栈.md
+      - 哈希表和有序表: Algorithm/Notes/AdvancedDataStructure/哈希表和有序表.md
     - 算法:
-      - BFPRT 算法: Algorithm/Notes/BFPRT算法.md
-      - KMP 和 Manacher 算法: Algorithm/Notes/KMP 和 Manacher.md
-      - Morris遍历: Algorithm.md
+      - BFPRT 算法: Algorithm/Notes/Algorithm/BFPRT算法.md
+      - KMP 和 Manacher 算法: Algorithm/Notes/Algorithm/KMP 和 Manacher.md
+      - LRU & LFU: Algorithm/Notes/Algorithm/LRU & LFU.md
+      - Morris遍历: Algorithm/Notes/Algorithm/Morris遍历.md
+    - 技巧:
+      - 
   - Java:
     - Arrays.asList()解读: Java/Arrays.asList() 源码解析.md
     - Deque: Java/该用Deque了.md
