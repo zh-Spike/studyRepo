@@ -71,7 +71,7 @@
 
 先序遍历:
 
-![](pics/MorrisPre.png)
+![](../pics/MorrisPre.png)
 
     只出现一次的点 直接打印
     出现两次的点   第一次打印
@@ -112,7 +112,7 @@
 
 中序遍历：
 
-![](pics/MorrisIn.png)
+![](../pics/MorrisIn.png)
 
     只出现一次的点 直接打印
     出现二次的点   第二次打印
@@ -149,7 +149,7 @@
 ```
 ### 后序遍历
 
-![](pics/MorrisPost.png)
+![](../pics/MorrisPost.png)
 
     逆序打印左树的右边界
 

@@ -60,7 +60,7 @@ HashMap 记录
         
 也可以用系统提供的 Linkedlist
 
-![](pics/LRU.png)
+![](../pics/LRU.png)
 
 ### Code
 ```java

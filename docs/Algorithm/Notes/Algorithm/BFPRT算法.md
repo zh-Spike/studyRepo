@@ -15,7 +15,7 @@
 
 BFPRT 的主要目的是 给 partition 找一个合适的 划分值
 
-![](pics/BFPRT%20(4).png)
+![](../pics/BFPRT%20(4).png)
 
 选取主元
 
@@ -27,13 +27,13 @@ BFPRT 的主要目的是 给 partition 找一个合适的 划分值
     
         判断主元的位置与 k 的大小，有选择的对左边或右边递归。
 
-![](pics/BFPRT1.webp)
+![](../pics/BFPRT1.webp)
 
 BFPRT() 调用 GetPivotIndex() 和 Partition() 来求解第 k 小，在这过程中，GetPivotIndex() 也调用了 BFPRT()，即 GetPivotIndex() 和 BFPRT() 为互递归的关系。
 
 
 
-![](pics/BFPRT%20(3).png)
+![](../pics/BFPRT%20(3).png)
 
 分组后 取中位数 如果偶数个 向上取 组成 marr[]
 
@@ -43,7 +43,7 @@ BFPRT() 调用 GetPivotIndex() 和 Partition() 来求解第 k 小，在这过程
 
     在归并的时候 因为我们 X 限制了范围所以使得归并范围小 时间复杂度低
 
-![](pics/BFPRT%20(2).png)
+![](../pics/BFPRT%20(2).png)
 
 (三) 这列大于 c 的就有 N / 10 算上 d，e 
 
@@ -51,7 +51,7 @@ BFPRT() 调用 GetPivotIndex() 和 Partition() 来求解第 k 小，在这过程
 
 C 就是我要的 X
 
-![](pics/BFPRT%20(1).png)
+![](../pics/BFPRT%20(1).png)
 
 可用 master 公式算复杂度 O(N) 
 
@@ -185,7 +185,7 @@ public class Problem06_BFPRT {
 
 ## Why 5 ？
 
-![](pics/BFPRT_Why5.png)
+![](../pics/BFPRT_Why5.png)
 
 他这里的整体应该是 取中位数的 和 左右递归的时间复杂度 增加
 
