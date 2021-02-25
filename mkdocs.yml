@@ -105,9 +105,9 @@ plugins:
 nav:
   - 简介: index.md
   - DataStructure:
-    - Java刷题的一般写法: docs\Algorithm\Notes\Java刷题的一般写法.md
+    - Java刷题的一般写法: Algorithm\Notes\Java刷题的一般写法.md
     - 高级数据结构:
-      - 高级数据结构: docs\Algorithm\Notes\高级数据结构.md
+      - 高级数据结构: Algorithm\Notes\高级数据结构.md
       - 并查集: Algorithm\Notes\并查集.md
       - 单调栈: Algorithm\Notes\单调栈.md
     - 算法:
@@ -115,11 +115,11 @@ nav:
       - KMP 和 Manacher 算法: Algorithm\Notes\KMP 和 Manacher.md
       - Morris遍历: Algorithm.md
   - Java:
-    - Arrays.asList()解读: docs\java\Arrays.asList() 源码解析.md
-    - Deque: docs\java\该用Deque了.md
+    - Arrays.asList()解读: Java\Arrays.asList() 源码解析.md
+    - Deque: Java\该用Deque了.md
   - Tricks:
-    - VIM应用: docs\Tricks\vim.md
-    - Linux: docs\Tricks\linux.md
+    - VIM应用: Tricks\vim.md
+    - Linux: Tricks\linux.md
 
 
 
