@@ -146,7 +146,7 @@ class Employee {
    3. 你的目标是让派对的整体快乐值尽量大给定一棵多叉树的头节点boss，请返回派对的最大快乐值。
 
 
-![](pics/TreeDP2.png)
+![](../pics/TreeDP2.png)
 
 可能性
 
