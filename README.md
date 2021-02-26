@@ -1,8 +1,7 @@
 [![Build Status](https://travis-ci.com/zh-Spike/studyRepo.svg?branch=main)](https://travis-ci.com/zh-Spike/studyRepo)
 
 # studyRepo
-学习笔记（目前是牛客网左程云的算法课）
-
+学习笔记
 
 搞了个 java刷题总结 参考网上博客 + 源码 + stackoverflow 
 ***
