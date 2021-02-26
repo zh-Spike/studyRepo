@@ -136,7 +136,7 @@ nav:
       - 树形DP.md:  Algorithm/Notes/Strategy/树形DP.md
       - 概率转化(拒绝采样)问题.md:  Algorithm/Notes/Strategy/概率转化(拒绝采样)问题.md
       - 滑窗.md:  Algorithm/Notes/Strategy/滑窗.md
-      - 预处理.md:  Algorithm/Notes/Strategy/预处理.mdd
+      - 预处理.md:  Algorithm/Notes/Strategy/预处理.mdxd
   - Java:
     - Arrays.asList()解读: Java/Arrays.asList() 源码解析.md
     - Deque: Java/该用Deque了.md
