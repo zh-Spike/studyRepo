@@ -149,12 +149,12 @@ nav:
       - 119. 杨辉三角 II.md:  Algorithm/LC/119. 杨辉三角 II.md
       - 1208. 尽可能使字符串相等.md:  Algorithm/LC/1208. 尽可能使字符串相等.md
       - 121. 买卖股票的最佳时机.md:  Algorithm/LC/121. 买卖股票的最佳时机.md
-      - 122. 买卖股票的最佳时机 II.md:  Algorithm/LC/122. 买卖股票的最佳时机 II.md
-      - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md
+      - 122. 买卖股票的最佳时机 II.md:  Algorithm/LC/122. 买卖股票的最佳时机 II.md        
+      - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md      
       - 124. 二叉树中的最大路径和.md:  Algorithm/LC/124. 二叉树中的最大路径和.md
-      - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md
-      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md
-      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md
+      - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md      
+      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md  
+      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md    
       - 1363. 形成三的最大倍数.md:  Algorithm/LC/1363. 形成三的最大倍数.md
       - 1373. 二叉搜索子树的最大键值和.md:  Algorithm/LC/1373. 二叉搜索子树的最大键值和.md
       - 138. 复制带随机指针的链表.md:  Algorithm/LC/138. 复制带随机指针的链表.md
@@ -193,6 +193,8 @@ nav:
       - 32. 最长有效括号.md:  Algorithm/LC/32. 最长有效括号.md
       - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
       - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
+      - 373. 查找和最小的K对数字.md:  Algorithm/LC/373. 查找和最小的K对数字.md
+      - 378. 有序矩阵中第 K 小的元素.md:  Algorithm/LC/378. 有序矩阵中第 K 小的元素.md
       - 386. 字典序排数.md:  Algorithm/LC/386. 字典序排数.md
       - 399. 除法求值.md:  Algorithm/LC/399. 除法求值.md
       - 42. 接雨水.md:  Algorithm/LC/42. 接雨水.md
@@ -248,7 +250,7 @@ nav:
       - 978. 最长湍流子数组.md:  Algorithm/LC/978. 最长湍流子数组.md
       - 98. 验证二叉搜索树.md:  Algorithm/LC/98. 验证二叉搜索树.md
       - 992. K 个不同整数的子数组.md:  Algorithm/LC/992. K 个不同整数的子数组.md
-      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md
+      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.mdd
     - 剑指OFFER:
       - 剑指 Offer 04. 二维数组中的查找: Algorithm/LC/剑指 Offer 04. 二维数组中的查找.md
       - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面: Algorithm/LC/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
