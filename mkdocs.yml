@@ -277,6 +277,9 @@ nav:
   - Tricks:
     - VIM应用: Tricks/vim.md
     - Linux: Tricks/linux.md
+  - 杂项:
+    - LC周赛.md:  Algorithm/LC周赛.md
+    - LC模板.md:  Algorithm/LC模板.md
 
 
 
