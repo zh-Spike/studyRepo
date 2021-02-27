@@ -144,18 +144,19 @@ nav:
     - 题库:
       - 1004. 最大连续1的个数 III.md:  Algorithm/LC/1004. 最大连续1的个数 III.md
       - 101. 对称二叉树.md:  Algorithm/LC/101. 对称二叉树.md
+      - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md
       - 102. 二叉树的层序遍历.md:  Algorithm/LC/102. 二叉树的层序遍历.md
       - 1046. 最后一块石头的重量.md:  Algorithm/LC/1046. 最后一块石头的重量.md
       - 1052. 爱生气的书店老板.md:  Algorithm/LC/1052. 爱生气的书店老板.md
       - 119. 杨辉三角 II.md:  Algorithm/LC/119. 杨辉三角 II.md
       - 1208. 尽可能使字符串相等.md:  Algorithm/LC/1208. 尽可能使字符串相等.md
       - 121. 买卖股票的最佳时机.md:  Algorithm/LC/121. 买卖股票的最佳时机.md
-      - 122. 买卖股票的最佳时机 II.md:  Algorithm/LC/122. 买卖股票的最佳时机 II.md        
-      - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md      
+      - 122. 买卖股票的最佳时机 II.md:  Algorithm/LC/122. 买卖股票的最佳时机 II.md
+      - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md
       - 124. 二叉树中的最大路径和.md:  Algorithm/LC/124. 二叉树中的最大路径和.md
-      - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md      
-      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md  
-      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md    
+      - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md
+      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md      
+      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md        
       - 1363. 形成三的最大倍数.md:  Algorithm/LC/1363. 形成三的最大倍数.md
       - 1373. 二叉搜索子树的最大键值和.md:  Algorithm/LC/1373. 二叉搜索子树的最大键值和.md
       - 138. 复制带随机指针的链表.md:  Algorithm/LC/138. 复制带随机指针的链表.md
@@ -221,6 +222,7 @@ nav:
       - 561. 数组拆分 I.md:  Algorithm/LC/561. 数组拆分 I.md
       - 566. 重塑矩阵.md:  Algorithm/LC/566. 重塑矩阵.md
       - 567. 字符串的排列.md:  Algorithm/LC/567. 字符串的排列.md
+      - 581. 最短无序连续子数组.md:  Algorithm/LC/581. 最短无序连续子数组.md
       - 589. N叉树的前序遍历.md:  Algorithm/LC/589. N叉树的前序遍历.md
       - 59. 螺旋矩阵 II.md:  Algorithm/LC/59. 螺旋矩阵 II.md
       - 605. 种花问题.md:  Algorithm/LC/605. 种花问题.md
@@ -251,19 +253,20 @@ nav:
       - 978. 最长湍流子数组.md:  Algorithm/LC/978. 最长湍流子数组.md
       - 98. 验证二叉搜索树.md:  Algorithm/LC/98. 验证二叉搜索树.md
       - 992. K 个不同整数的子数组.md:  Algorithm/LC/992. K 个不同整数的子数组.md
-      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.mdd
+      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md
     - 剑指OFFER:
-      - 剑指 Offer 04. 二维数组中的查找: Algorithm/LC/剑指 Offer 04. 二维数组中的查找.md
-      - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面: Algorithm/LC/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
-      - 剑指 Offer 29. 顺时针打印矩阵: Algorithm/LC/剑指 Offer 29. 顺时针打印矩阵.md
-      - 剑指 Offer 37. 序列化二叉树: Algorithm/LC/剑指 Offer 37. 序列化二叉树.md
-      - 剑指 Offer 40. 最小的k个数: Algorithm/LC/剑指 Offer 40. 最小的k个数.md
-      - 剑指 Offer 41. 数据流中的中位数: Algorithm/LC/剑指 Offer 41. 数据流中的中位数.md
-      - 剑指 Offer 42. 连续子数组的最大和: Algorithm/LC/剑指 Offer 42. 连续子数组的最大和.md
-      - 剑指 Offer 46. 把数字翻译成字符串: Algorithm/LC/剑指 Offer 46. 把数字翻译成字符串.md
-      - 剑指 Offer 51. 数组中的逆序对: Algorithm/LC/剑指 Offer 51. 数组中的逆序对.md
-      - 剑指 Offer 61. 扑克牌中的顺子: Algorithm/LC/剑指 Offer 61. 扑克牌中的顺子.md
-      - 剑指 Offer 68 - II. 二叉树的最近公共祖先: Algorithm/LC/剑指 Offer 68 - II. 二叉树的最近公共祖先.md
+      - 剑指 Offer 04. 二维数组中的查找.md:  Algorithm/LC/剑指 Offer 04. 二维数组中的查找.md
+      - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md:  Algorithm/LC/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
+      - 剑指 Offer 29. 顺时针打印矩阵.md:  Algorithm/LC/剑指 Offer 29. 顺时针打印矩阵.md
+      - 剑指 Offer 37. 序列化二叉树.md:  Algorithm/LC/剑指 Offer 37. 序列化二叉树.md
+      - 剑指 Offer 40. 最小的k个数.md:  Algorithm/LC/剑指 Offer 40. 最小的k个数.md
+      - 剑指 Offer 41. 数据流中的中位数.md:  Algorithm/LC/剑指 Offer 41. 数据流中的中位数.md
+      - 剑指 Offer 42. 连续子数组的最大和.md:  Algorithm/LC/剑指 Offer 42. 连续子数组的最大和.md
+      - 剑指 Offer 46. 把数字翻译成字符串.md:  Algorithm/LC/剑指 Offer 46. 把数字翻译成字符串.md
+      - 剑指 Offer 49. 丑数.md:  Algorithm/LC/剑指 Offer 49. 丑数.md
+      - 剑指 Offer 51. 数组中的逆序对.md:  Algorithm/LC/剑指 Offer 51. 数组中的逆序对.md
+      - 剑指 Offer 61. 扑克牌中的顺子.md:  Algorithm/LC/剑指 Offer 61. 扑克牌中的顺子.md
+      - 剑指 Offer 68 - II. 二叉树的最近公共祖先.md:  Algorithm/LC/剑指 Offer 68 - II. 二叉树的最近公共祖先.md
     - 金经:
       - 面试题 01.07. 旋转矩阵: Algorithm/LC/面试题 01.07. 旋转矩阵.md
       - 面试题 02.08. 环路检测: Algorithm/LC/面试题 02.08. 环路检测.md
