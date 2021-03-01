@@ -189,6 +189,7 @@ nav:
       - 28. 实现 strStr().md:  Algorithm/LC/28. 实现 strStr().md
       - 3. 无重复字符的最长子串.md:  Algorithm/LC/3. 无重复字符的最长子串.md
       - 300. 最长递增子序列.md:  Algorithm/LC/300. 最长递增子序列.md
+      - 303. 区域和检索 - 数组不可变.md:  Algorithm/LC/303. 区域和检索 - 数组不可变.md
       - 309. 最佳买卖股票时机含冷冻期.md:  Algorithm/LC/309. 最佳买卖股票时机含冷冻期.md
       - 315. 计算右侧小于当前元素的个数.md:  Algorithm/LC/315. 计算右侧小于当前元素的个数.md
       - 316. 去除重复字母.md:  Algorithm/LC/316. 去除重复字母.md
@@ -285,6 +286,7 @@ nav:
   - Tricks:
     - VIM应用: Tricks/vim.md
     - Linux: Tricks/linux.md
+    - 常数操作数量技巧: Tricks/常数操作数量.md
   - 杂项:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md
