@@ -142,6 +142,7 @@ nav:
     - Deque: Java/该用Deque了.md
   - LeetCode:
     - 题库:
+      - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
       - 1004. 最大连续1的个数 III.md:  Algorithm/LC/1004. 最大连续1的个数 III.md
       - 101. 对称二叉树.md:  Algorithm/LC/101. 对称二叉树.md
       - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md
@@ -166,17 +167,21 @@ nav:
       - 145. 二叉树的后序遍历.md:  Algorithm/LC/145. 二叉树的后序遍历.md
       - 146. LRU 缓存机制.md:  Algorithm/LC/146. LRU 缓存机制.md
       - 149. 直线上最多的点数.md:  Algorithm/LC/149. 直线上最多的点数.md
+      - 15. 三数之和.md:  Algorithm/LC/15. 三数之和.md
       - 1572. 矩阵对角线元素的和.md:  Algorithm/LC/1572. 矩阵对角线元素的和.md
       - 160. 相交链表.md:  Algorithm/LC/160. 相交链表.md
       - 1631. 最小体力消耗路径.md:  Algorithm/LC/1631. 最小体力消耗路径.md
       - 164. 最大间距.md:  Algorithm/LC/164. 最大间距.md
       - 1647. 字符频次唯一的最小删除次数.md:  Algorithm/LC/1647. 字符频次唯一的最小删除次数.md
+      - 167. 两数之和 II - 输入有序数组.md:  Algorithm/LC/167. 两数之和 II - 输入有序数组.md
       - 188. 买卖股票的最佳时机 IV.md:  Algorithm/LC/188. 买卖股票的最佳时机 IV.md
       - 189. 旋转数组.md:  Algorithm/LC/189. 旋转数组.md
       - 200. 岛屿数量.md:  Algorithm/LC/200. 岛屿数量.md
       - 205. 同构字符串.md:  Algorithm/LC/205. 同构字符串.md
       - 206. 反转链表.md:  Algorithm/LC/206. 反转链表.md
       - 208. 实现 Trie (前缀树).md:  Algorithm/LC/208. 实现 Trie (前缀树).md
+      - 21. 合并两个有序链表.md:  Algorithm/LC/21. 合并两个有序链表.md
+      - 214. 最短回文串.md:  Algorithm/LC/214. 最短回文串.md
       - 215. 数组中的第K个最大元素.md:  Algorithm/LC/215. 数组中的第K个最大元素.md
       - 222. 完全二叉树的节点个数.md:  Algorithm/LC/222. 完全二叉树的节点个数.md
       - 225. 用队列实现栈.md:  Algorithm/LC/225. 用队列实现栈.md
@@ -190,6 +195,7 @@ nav:
       - 3. 无重复字符的最长子串.md:  Algorithm/LC/3. 无重复字符的最长子串.md
       - 300. 最长递增子序列.md:  Algorithm/LC/300. 最长递增子序列.md
       - 303. 区域和检索 - 数组不可变.md:  Algorithm/LC/303. 区域和检索 - 数组不可变.md
+      - 304. 二维区域和检索 - 矩阵不可变.md:  Algorithm/LC/304. 二维区域和检索 - 矩阵不可变.md
       - 309. 最佳买卖股票时机含冷冻期.md:  Algorithm/LC/309. 最佳买卖股票时机含冷冻期.md
       - 315. 计算右侧小于当前元素的个数.md:  Algorithm/LC/315. 计算右侧小于当前元素的个数.md
       - 316. 去除重复字母.md:  Algorithm/LC/316. 去除重复字母.md
@@ -199,11 +205,13 @@ nav:
       - 373. 查找和最小的K对数字.md:  Algorithm/LC/373. 查找和最小的K对数字.md
       - 378. 有序矩阵中第 K 小的元素.md:  Algorithm/LC/378. 有序矩阵中第 K 小的元素.md
       - 386. 字典序排数.md:  Algorithm/LC/386. 字典序排数.md
+      - 391. 完美矩形.md:  Algorithm/LC/391. 完美矩形.md
       - 399. 除法求值.md:  Algorithm/LC/399. 除法求值.md
       - 42. 接雨水.md:  Algorithm/LC/42. 接雨水.md
       - 424. 替换后的最长重复字符.md:  Algorithm/LC/424. 替换后的最长重复字符.md
       - 435. 无重叠区间.md:  Algorithm/LC/435. 无重叠区间.md
       - 440. 字典序的第K小数字.md:  Algorithm/LC/440. 字典序的第K小数字.md
+      - 443. 压缩字符串.md:  Algorithm/LC/443. 压缩字符串.md
       - 448. 找到所有数组中消失的数字.md:  Algorithm/LC/448. 找到所有数组中消失的数字.md
       - 45. 跳跃游戏 II.md:  Algorithm/LC/45. 跳跃游戏 II.md
       - 451. 根据字符出现频率排序.md:  Algorithm/LC/451. 根据字符出现频率排序.md
@@ -256,7 +264,7 @@ nav:
       - 978. 最长湍流子数组.md:  Algorithm/LC/978. 最长湍流子数组.md
       - 98. 验证二叉搜索树.md:  Algorithm/LC/98. 验证二叉搜索树.md
       - 992. K 个不同整数的子数组.md:  Algorithm/LC/992. K 个不同整数的子数组.md
-      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md
+      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md  
     - 剑指OFFER:
       - 剑指 Offer 04. 二维数组中的查找.md:  Algorithm/LC/剑指 Offer 04. 二维数组中的查找.md
       - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md:  Algorithm/LC/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
@@ -271,13 +279,15 @@ nav:
       - 剑指 Offer 61. 扑克牌中的顺子.md:  Algorithm/LC/剑指 Offer 61. 扑克牌中的顺子.md
       - 剑指 Offer 68 - II. 二叉树的最近公共祖先.md:  Algorithm/LC/剑指 Offer 68 - II. 二叉树的最近公共祖先.md
     - 金经:
-      - 面试题 01.07. 旋转矩阵: Algorithm/LC/面试题 01.07. 旋转矩阵.md
-      - 面试题 02.08. 环路检测: Algorithm/LC/面试题 02.08. 环路检测.md
-      - 面试题 03.02. 栈的最小值: Algorithm/LC/面试题 03.02. 栈的最小值.md
-      - 面试题 03.05. 栈排序: Algorithm/LC/面试题 03.05. 栈排序.md
-      - 面试题 04.04. 检查平衡性: Algorithm/LC/面试题 04.04. 检查平衡性.md
-      - 面试题 04.06. 后继者: Algorithm/LC/面试题 04.06. 后继者.md
-      - 面试题 17.24. 最大子矩阵: Algorithm/LC/面试题 17.24. 最大子矩阵.md
+      - 面试题 01.06. 字符串压缩.md:  Algorithm/LC/面试题 01.06. 字符串压缩.md
+      - 面试题 01.07. 旋转矩阵.md:  Algorithm/LC/面试题 01.07. 旋转矩阵.md
+      - 面试题 02.08. 环路检测.md:  Algorithm/LC/面试题 02.08. 环路检测.md
+      - 面试题 03.02. 栈的最小值.md:  Algorithm/LC/面试题 03.02. 栈的最小值.md
+      - 面试题 03.05. 栈排序.md:  Algorithm/LC/面试题 03.05. 栈排序.md
+      - 面试题 04.04. 检查平衡性.md:  Algorithm/LC/面试题 04.04. 检查平衡性.md
+      - 面试题 04.06. 后继者.md:  Algorithm/LC/面试题 04.06. 后继者.md
+      - 面试题 04.10. 检查子树.md:  Algorithm/LC/面试题 04.10. 检查子树.md
+      - 面试题 17.24. 最大子矩阵.md:  Algorithm/LC/面试题 17.24. 最大子矩阵.mdd
     - 周赛: 
       - 第 42 场双周赛: Algorithm/LC/第 42 场双周赛.md
       - 第 43 场双周赛: Algorithm/LC/第 43 场双周赛.md
