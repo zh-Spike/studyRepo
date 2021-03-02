@@ -201,6 +201,7 @@ nav:
       - 316. 去除重复字母.md:  Algorithm/LC/316. 去除重复字母.md
       - 32. 最长有效括号.md:  Algorithm/LC/32. 最长有效括号.md
       - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
+      - 338. 比特位计数.md:  Algorithm/LC/338. 比特位计数.md
       - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
       - 373. 查找和最小的K对数字.md:  Algorithm/LC/373. 查找和最小的K对数字.md
       - 378. 有序矩阵中第 K 小的元素.md:  Algorithm/LC/378. 有序矩阵中第 K 小的元素.md
@@ -264,7 +265,7 @@ nav:
       - 978. 最长湍流子数组.md:  Algorithm/LC/978. 最长湍流子数组.md
       - 98. 验证二叉搜索树.md:  Algorithm/LC/98. 验证二叉搜索树.md
       - 992. K 个不同整数的子数组.md:  Algorithm/LC/992. K 个不同整数的子数组.md
-      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md  
+      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md 
     - 剑指OFFER:
       - 剑指 Offer 04. 二维数组中的查找.md:  Algorithm/LC/剑指 Offer 04. 二维数组中的查找.md
       - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md:  Algorithm/LC/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
