@@ -108,7 +108,6 @@ nav:
     - README: index.md
     - About: about.md
   - DataStructure:
-    - Java刷题的一般写法: Algorithm/Notes/Java刷题的一般写法.md
     - 数据结构:
       - Queue&Stack: Algorithm/Notes/DataStructure/Queue&Stack.md
       - 二叉树: Algorithm/Notes/DataStructure/二叉树.md
@@ -121,7 +120,9 @@ nav:
       - 并查集: Algorithm/Notes/AdvancedDataStructure/并查集.md
       - 单调栈: Algorithm/Notes/AdvancedDataStructure/单调栈.md
       - 哈希表和有序表: Algorithm/Notes/AdvancedDataStructure/哈希表和有序表.md
-    - 算法:
+  - Algorithm:
+    - Java刷题的一般写法: Algorithm/Notes/Java刷题的一般写法.md
+    - 高级算法:
       - BFPRT 算法: Algorithm/Notes/Algorithm/BFPRT算法.md
       - KMP 和 Manacher 算法: Algorithm/Notes/Algorithm/KMP 和 Manacher.md
       - LRU & LFU: Algorithm/Notes/Algorithm/LRU & LFU.md
@@ -134,12 +135,15 @@ nav:
       - 大数据.md:  Algorithm/Notes/Strategy/大数据.md
       - 打表找规律.md:  Algorithm/Notes/Strategy/打表找规律.md
       - 树形DP.md:  Algorithm/Notes/Strategy/树形DP.md
-      - 概率转化(拒绝采样)问题.md:  Algorithm/Notes/Strategy/概率转化(拒绝采样)问题.md
+      - 概率转化(拒绝采样)问题.md: Algorithm/Notes/Strategy/概率转化(拒绝采样)问题.md
       - 滑窗.md:  Algorithm/Notes/Strategy/滑窗.md
-      - 预处理.md:  Algorithm/Notes/Strategy/预处理.mdxd
+      - 预处理.md:  Algorithm/Notes/Strategy/预处理.md
+      - 常数操作数量技巧: Algorithm/Notes/Strategy/常数操作数量.md
+      - 单调性DP: Algorithm/Notes/Strategy/单调性DP.md
   - Java:
     - Arrays.asList()解读: Java/Arrays.asList() 源码解析.md
     - Deque: Java/该用Deque了.md
+    - Steam: Java/Steam 流.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
@@ -156,8 +160,8 @@ nav:
       - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md
       - 124. 二叉树中的最大路径和.md:  Algorithm/LC/124. 二叉树中的最大路径和.md
       - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md
-      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md      
-      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md        
+      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md
+      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md
       - 1363. 形成三的最大倍数.md:  Algorithm/LC/1363. 形成三的最大倍数.md
       - 1373. 二叉搜索子树的最大键值和.md:  Algorithm/LC/1373. 二叉搜索子树的最大键值和.md
       - 138. 复制带随机指针的链表.md:  Algorithm/LC/138. 复制带随机指针的链表.md
@@ -203,6 +207,7 @@ nav:
       - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
       - 338. 比特位计数.md:  Algorithm/LC/338. 比特位计数.md
       - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
+      - 354. 俄罗斯套娃信封问题.md:  Algorithm/LC/354. 俄罗斯套娃信封问题.md
       - 373. 查找和最小的K对数字.md:  Algorithm/LC/373. 查找和最小的K对数字.md
       - 378. 有序矩阵中第 K 小的元素.md:  Algorithm/LC/378. 有序矩阵中第 K 小的元素.md
       - 386. 字典序排数.md:  Algorithm/LC/386. 字典序排数.md
@@ -236,6 +241,7 @@ nav:
       - 589. N叉树的前序遍历.md:  Algorithm/LC/589. N叉树的前序遍历.md
       - 59. 螺旋矩阵 II.md:  Algorithm/LC/59. 螺旋矩阵 II.md
       - 605. 种花问题.md:  Algorithm/LC/605. 种花问题.md
+      - 632. 最小区间.md:  Algorithm/LC/632. 最小区间.md
       - 643. 子数组最大平均数 I.md:  Algorithm/LC/643. 子数组最大平均数 I.md
       - 650. 只有两个键的键盘.md:  Algorithm/LC/650. 只有两个键的键盘.md
       - 688. “马”在棋盘上的概率.md:  Algorithm/LC/688. “马”在棋盘上的概率.md
@@ -288,7 +294,7 @@ nav:
       - 面试题 04.04. 检查平衡性.md:  Algorithm/LC/面试题 04.04. 检查平衡性.md
       - 面试题 04.06. 后继者.md:  Algorithm/LC/面试题 04.06. 后继者.md
       - 面试题 04.10. 检查子树.md:  Algorithm/LC/面试题 04.10. 检查子树.md
-      - 面试题 17.24. 最大子矩阵.md:  Algorithm/LC/面试题 17.24. 最大子矩阵.mdd
+      - 面试题 17.24. 最大子矩阵.md:  Algorithm/LC/面试题 17.24. 最大子矩阵.md
     - 周赛: 
       - 第 42 场双周赛: Algorithm/LC/第 42 场双周赛.md
       - 第 43 场双周赛: Algorithm/LC/第 43 场双周赛.md
@@ -297,7 +303,6 @@ nav:
   - Tricks:
     - VIM应用: Tricks/vim.md
     - Linux: Tricks/linux.md
-    - 常数操作数量技巧: Tricks/常数操作数量.md
   - Others:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md
