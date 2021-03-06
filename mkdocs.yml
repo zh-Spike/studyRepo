@@ -128,6 +128,7 @@ nav:
       - LRU & LFU: Algorithm/Notes/Algorithm/LRU & LFU.md
       - Morris遍历: Algorithm/Notes/Algorithm/Morris遍历.md
     - 技巧:
+      - 严格递归的DP快速幂.md:  Algorithm/Notes/Strategy/严格递归的DP快速幂.md
       - 从暴力哥到DP.md:  Algorithm/Notes/Strategy/从暴力哥到DP.md
       - 位运算技巧.md:  Algorithm/Notes/Strategy/位运算技巧.md
       - 单调性DP.md:  Algorithm/Notes/Strategy/单调性DP.md
@@ -140,7 +141,7 @@ nav:
       - 树形DP.md:  Algorithm/Notes/Strategy/树形DP.md
       - 概率转化(拒绝采样)问题.md:  Algorithm/Notes/Strategy/概率转化(拒绝采样)问题.md
       - 滑窗.md:  Algorithm/Notes/Strategy/滑窗.md
-      - 预处理.md:  Algorithm/Notes/Strategy/预处理.mdd
+      - 预处理.md:  Algorithm/Notes/Strategy/预处理.md
   - Java:
     - Arrays.asList()解读: Java/Arrays.asList() 源码解析.md
     - Deque: Java/该用Deque了.md
