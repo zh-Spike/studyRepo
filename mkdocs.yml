@@ -127,10 +127,11 @@ nav:
       - KMP 和 Manacher 算法: Algorithm/Notes/Algorithm/KMP 和 Manacher.md
       - LRU & LFU: Algorithm/Notes/Algorithm/LRU & LFU.md
       - Morris遍历: Algorithm/Notes/Algorithm/Morris遍历.md
-    - 技巧:
+    - Strategy:
       - 严格递归的DP快速幂.md:  Algorithm/Notes/Strategy/严格递归的DP快速幂.md
       - 从暴力哥到DP.md:  Algorithm/Notes/Strategy/从暴力哥到DP.md
       - 位运算技巧.md:  Algorithm/Notes/Strategy/位运算技巧.md
+      - 区间DP.md:  Algorithm/Notes/Strategy/区间DP.md
       - 单调性DP.md:  Algorithm/Notes/Strategy/单调性DP.md
       - 卡塔兰数.md:  Algorithm/Notes/Strategy/卡塔兰数.md
       - 原地哈希.md:  Algorithm/Notes/Strategy/原地哈希.md
@@ -162,6 +163,9 @@ nav:
       - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md
       - 124. 二叉树中的最大路径和.md:  Algorithm/LC/124. 二叉树中的最大路径和.md
       - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md
+      - 131. 分割回文串.md:  Algorithm/LC/131. 分割回文串.md
+      - 1312. 让字符串成为回文串的最少插入次数.md:  Algorithm/LC/1312. 让字符串成为回文串的最少插入次数.md
+      - 133. 克隆图.md:  Algorithm/LC/133. 克隆图.md
       - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md
       - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md
       - 1363. 形成三的最大倍数.md:  Algorithm/LC/1363. 形成三的最大倍数.md
@@ -206,6 +210,7 @@ nav:
       - 315. 计算右侧小于当前元素的个数.md:  Algorithm/LC/315. 计算右侧小于当前元素的个数.md
       - 316. 去除重复字母.md:  Algorithm/LC/316. 去除重复字母.md
       - 32. 最长有效括号.md:  Algorithm/LC/32. 最长有效括号.md
+      - 329. 矩阵中的最长递增路径.md:  Algorithm/LC/329. 矩阵中的最长递增路径.md
       - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
       - 338. 比特位计数.md:  Algorithm/LC/338. 比特位计数.md
       - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
