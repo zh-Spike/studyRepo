@@ -144,9 +144,11 @@ nav:
       - 滑窗.md:  Algorithm/Notes/Strategy/滑窗.md
       - 预处理.md:  Algorithm/Notes/Strategy/预处理.md
   - Java:
-    - Arrays.asList()解读: Java/Arrays.asList() 源码解析.md
-    - Deque: Java/该用Deque了.md
-    - Steam: Java/Steam 流.md
+    - 基础.md:  Java/基础.md
+    - Collection.md:  Java/Collection.md
+    - 该用Deque了.md:  Java/该用Deque了.md
+    - Arrays.asList() 源码解析.md:  Java/Arrays.asList() 源码解析.md
+    - Steam 流.md:  Java/Steam 流.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md

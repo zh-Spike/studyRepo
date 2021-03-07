@@ -15,7 +15,7 @@ WHY
     
     For example:Deque<Integer> stack = new ArrayDeque<Integer>();
 
-![](pic/stack.webp)
+![](pics/stack.webp)
 
 Deque是继承自Queue，而Stack是继承自Vector，这就比较奇怪了。
 
