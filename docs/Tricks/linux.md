@@ -1,11 +1,11 @@
 # Linux
-1. 关闭端口
+### 关闭端口
   ```
   netstat -ano|findstr "8082"
   taskkill  -F -PID 6832
   ```
   
-  ### kill pid与kill -9 pid的区别
+### kill pid与kill -9 pid的区别
  
   kill pid的作用是向进程号为pid的进程发送SIGTERM（这是kill默认发送的信号），该信号是一个结束进程的信号且可以被应用程序捕获。若应用程序没有捕获并响应该信号的逻辑代码，则该信号的默认动作是kill掉进程。这是终止指定进程的推荐做法。
 
