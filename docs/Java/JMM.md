@@ -24,11 +24,11 @@ Java 虚拟机在执行 Java 程序的过程中会把它管理的内存划分成
 
 **JDK 1.8 之前：**
 
-![](./pictures/java内存区域/JVM运行时数据区域.png)
+![](pics/JVM运行时数据区域.png)
 
 **JDK 1.8 ：**
 
-![](./pictures/java内存区域/2019-3Java运行时数据区域JDK1.8.png)
+![](pics/2019-3Java运行时数据区域JDK1.8.png)
 
 
 **线程私有的：**
@@ -56,6 +56,12 @@ Java 虚拟机在执行 Java 程序的过程中会把它管理的内存划分成
 **注意：程序计数器是唯一一个不会出现 `OutOfMemoryError` 的内存区域，它的生命周期随着线程的创建而创建，随着线程的结束而死亡。**
 
 ### 2.2 Java 虚拟机栈
+
+<font color = green>
+
+JVM 里的 相当于 OS 的栈帧 存了运行的命令位置和变量
+
+</font>
 
 **与程序计数器一样，Java 虚拟机栈也是线程私有的，它的生命周期和线程相同，描述的是 Java 方法执行的内存模型，每次方法调用的数据都是通过栈传递的。**
 
@@ -103,11 +109,11 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作**GC 堆（G
 2. 老生代(Old Generation)
 3. 永生代(Permanent Generation)
 
-![JVM堆内存结构-JDK7](./pictures/java内存区域/JVM堆内存结构-JDK7.png)
+![JVM堆内存结构-JDK7](pics/JVM堆内存结构-JDK7.jpg)
 
 JDK 8 版本之后方法区（HotSpot 的永久代）被彻底移除了（JDK1.7 就已经开始了），取而代之是元空间，元空间使用的是直接内存。
 
-![JVM堆内存结构-JDK8](./pictures/java内存区域/JVM堆内存结构-jdk8.png)
+![JVM堆内存结构-JDK8](pics/JVM堆内存结构-jdk8.jpg)
 
 **上图所示的 Eden 区、两个 Survivor 区都属于新生代（为了区分，这两个 Survivor 区域按照顺序被命名为 from 和 to），中间一层属于老年代。**
 
@@ -217,8 +223,23 @@ JDK1.4 中新加入的 **NIO(New Input/Output) 类**，引入了一种基于**�
 通过上面的介绍我们大概知道了虚拟机的内存情况，下面我们来详细的了解一下 HotSpot 虚拟机在 Java 堆中对象分配、布局和访问的全过程。
 
 ### 3.1 对象的创建
+
+<font color = green>
+
+类加载检查
+
+分配内存
+
+初始化零值
+
+设置对象头
+
+执行init方法
+
+</font>
+
 下图便是 Java 对象的创建过程，我建议最好是能默写出来，并且要掌握每一步在做什么。
-![Java创建对象的过程](./pictures/java内存区域/Java创建对象的过程.png)
+![Java创建对象的过程](pics/Java创建对象的过程.png)
 
 #### Step1:类加载检查
 
@@ -233,7 +254,7 @@ JDK1.4 中新加入的 **NIO(New Input/Output) 类**，引入了一种基于**�
 
 选择以上两种方式中的哪一种，取决于 Java 堆内存是否规整。而 Java 堆内存是否规整，取决于 GC 收集器的算法是"标记-清除"，还是"标记-整理"（也称作"标记-压缩"），值得注意的是，复制算法内存也是规整的
 
-![内存分配的两种方式](./pictures/java内存区域/内存分配的两种方式.png)
+![内存分配的两种方式](pics/内存分配的两种方式.png)
 
 **内存分配并发问题（补充内容，需要掌握）**
 
@@ -270,11 +291,11 @@ JDK1.4 中新加入的 **NIO(New Input/Output) 类**，引入了一种基于**�
 
 1. **句柄：** 如果使用句柄的话，那么 Java 堆中将会划分出一块内存来作为句柄池，reference 中存储的就是对象的句柄地址，而句柄中包含了对象实例数据与类型数据各自的具体地址信息；  
 
-   ![对象的访问定位-使用句柄](./pictures/java内存区域/对象的访问定位-使用句柄.png)
+   ![对象的访问定位-使用句柄](pics/对象的访问定位-使用句柄.png)
 
 2. **直接指针：**  如果使用直接指针访问，那么 Java 堆对象的布局中就必须考虑如何放置访问类型数据的相关信息，而 reference 中存储的直接就是对象的地址。
 
-![对象的访问定位-直接指针](./pictures/java内存区域/对象的访问定位-直接指针.png)
+![对象的访问定位-直接指针](pics/对象的访问定位-直接指针.png)
 
 
 
@@ -304,7 +325,7 @@ System.out.println(str2==str3);//false
 
 再给大家一个图应该更容易理解，图片来源：<https://www.journaldev.com/797/what-is-java-string-pool>：
 
-![String-Pool-Java](./pictures/java内存区域/2019-3String-Pool-Java1-450x249.png)
+![String-Pool-Java](pics/2019-3String-Pool-Java1-450x249.png)
 
 **String 类型的常量池比较特殊。它的主要使用方法有两种：**
 
@@ -332,7 +353,7 @@ System.out.println(str2==str3);//false
 		  System.out.println(str3 == str5);//true
 		  System.out.println(str4 == str5);//false
 ```
-![字符串拼接](./pictures/java内存区域/字符串拼接-常量池2.png)
+![字符串拼接](pics/字符串拼接-常量池2.png)
 
 尽量避免多个字符串拼接，因为这样会重新创建对象。如果需要改变字符串的话，可以使用 StringBuilder 或者 StringBuffer。
 ### 4.2 String s1 = new String("abc");这句话创建了几个字符串对象？
