@@ -144,13 +144,15 @@ nav:
       - 滑窗.md:  Algorithm/Notes/Strategy/滑窗.md
       - 预处理.md:  Algorithm/Notes/Strategy/预处理.md
   - Java:
-    - 基础.md:  java/基础.md
-    - Collection.md:  java/Collection.md
-    - ArrayList学习.md:  java/ArrayList学习.md
-    - 该用Deque了.md:  java/该用Deque了.md
-    - 并发.md:  java/并发.md
-    - Arrays.asList() 源码解析.md:  java/Arrays.asList() 源码解析.md
-    - Steam 流.md:  java/Steam 流.md
+    - 基础:
+      - 基础.md: Java/基础.md
+      - Collection.md: Java/Collection.md
+      - ArrayList学习.md:  java/ArrayList学习.md
+      - 该用Deque了.md:  java/该用Deque了.md
+      - Arrays.asList() 源码解析.md:  java/Arrays.asList() 源码解析.md
+    - 高级特性:
+      - 并发.md:  java/并发.md
+      - Steam 流.md:  java/Steam 流.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
