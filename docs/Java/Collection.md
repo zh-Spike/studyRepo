@@ -4,7 +4,7 @@
 
 ### 1.1. 说说List,Set,Map三者的区别？
 
-<font color = yellow>
+<font color = green>
 HashSet 底层就一个没有 value 的 HashMap
 </font>
 
@@ -14,7 +14,7 @@ HashSet 底层就一个没有 value 的 HashMap
 
 ### 1.2. Arraylist 与 LinkedList 区别?
 
-<font color = yellow>
+<font color = green>
 都不安全 一个数组一个链表 然后就 链表 / 数组 特性
 </font>
 
@@ -41,7 +41,7 @@ HashSet 底层就一个没有 value 的 HashMap
    ArrayList 的空 间浪费主要体现在在 list 列表的结尾会预留一定的容量空间，而 LinkedList 的空间花费则体现在它的每一个元素都需要消耗比 ArrayList 更多的空间（因为要存放直接后继和直接前驱以及数据）。
 
 #### 1.2.1. 补充内容:双向链表和双向循环链表
-<font color = yellow>
+<font color = green>
 LinkedList 底层不就是双向链表吗
 
 ArrayDeque 底层一个双向的数组
@@ -59,7 +59,7 @@ ArrayDeque 底层一个双向的数组
 
 #### 1.2.2. 补充内容:RandomAccess 接口
 
-<font color = yellow>
+<font color = green>
 链表有个题 克隆带随机指针的链表 
 </font>
 
@@ -98,7 +98,7 @@ Vocter 都老的实现类 里面那个 `Stack` 也是 不会有人还在用吧 �
 
 ### 1.5. HashMap 和 Hashtable 的区别
 
-<font color = yellow>
+<font color = green>
 HashTable 也是个老的类 核心卷 说的
 </font>
 
@@ -110,7 +110,7 @@ HashTable 也是个老的类 核心卷 说的
 
 **HashMap 中带有初始容量的构造函数：**
 
-<font color=Yellow>
+<font color=green>
 Java 开发手册里说 最好是你用的时候初始化一下容量 不过默认也有 16
 
 </font>
@@ -272,7 +272,7 @@ static int hash(int h) {
 
 为了能让 HashMap 存取高效，尽量较少碰撞，也就是要尽量把数据分配均匀。我们上面也讲到了过了，Hash 值的范围值-2147483648到2147483647，前后加起来大概40亿的映射空间，只要哈希函数映射得比较均匀松散，一般应用是很难出现碰撞的。但问题是一个40亿长度的数组，内存是放不下的。所以这个散列值是不能直接拿来用的。用之前还要先做对数组的长度取模运算，得到的余数才能用来要存放的位置也就是对应的数组下标。这个数组下标的计算方法是“ `(n - 1) & hash`”。（n代表数组长度）。这也就解释了 HashMap 的长度为什么是2的幂次方。
 
-<font color = yellow>
+<font color = green>
 又是位运算技巧
 </font>
 
@@ -287,7 +287,7 @@ static int hash(int h) {
 详情请查看：<https://coolshell.cn/articles/9606.html>
 
 ### 1.11. HashMap 有哪几种常见的遍历方式?
-<font color=yellow>
+<font color=green>
 一般都是 forEach
 </font>
 
