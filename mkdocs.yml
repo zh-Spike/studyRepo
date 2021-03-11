@@ -159,6 +159,7 @@ nav:
       - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md
       - 102. 二叉树的层序遍历.md:  Algorithm/LC/102. 二叉树的层序遍历.md
       - 1046. 最后一块石头的重量.md:  Algorithm/LC/1046. 最后一块石头的重量.md
+      - 1047. 删除字符串中的所有相邻重复项.md:  Algorithm/LC/1047. 删除字符串中的所有相邻重复项.md        
       - 1052. 爱生气的书店老板.md:  Algorithm/LC/1052. 爱生气的书店老板.md
       - 119. 杨辉三角 II.md:  Algorithm/LC/119. 杨辉三角 II.md
       - 1208. 尽可能使字符串相等.md:  Algorithm/LC/1208. 尽可能使字符串相等.md
@@ -199,7 +200,9 @@ nav:
       - 214. 最短回文串.md:  Algorithm/LC/214. 最短回文串.md
       - 215. 数组中的第K个最大元素.md:  Algorithm/LC/215. 数组中的第K个最大元素.md
       - 222. 完全二叉树的节点个数.md:  Algorithm/LC/222. 完全二叉树的节点个数.md
+      - 224. 基本计算器.md:  Algorithm/LC/224. 基本计算器.md
       - 225. 用队列实现栈.md:  Algorithm/LC/225. 用队列实现栈.md
+      - 227. 基本计算器 II.md:  Algorithm/LC/227. 基本计算器 II.md
       - 228. 汇总区间.md:  Algorithm/LC/228. 汇总区间.md
       - 23. 合并K个升序链表.md:  Algorithm/LC/23. 合并K个升序链表.md
       - 232. 用栈实现队列.md:  Algorithm/LC/232. 用栈实现队列.md
