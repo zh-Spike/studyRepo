@@ -156,6 +156,7 @@ nav:
       - 并发.md: Java/并发.md
       - Steam 流.md: Java/Steam 流.md
     - JVM:
+      - JVM概.md: Java/JVM概.md 
       - JMM.md: Java/JMM.md 
       - GC.md: Java/GC.md 
   - LeetCode:
