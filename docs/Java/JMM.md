@@ -341,6 +341,14 @@ System.out.println(str2==str3);//false
 	      System.out.println(s3 == s2);//true，因为两个都是常量池中的 String 对象
 ```
 **字符串拼接:**
+<font color = green>
+
+字符串 不要用 '+'
+
+相当于 new 了一下 重新创建了一个 
+
+性能差 
+</font>
 
 ```java
 		  String str1 = "str";

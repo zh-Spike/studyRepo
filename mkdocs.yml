@@ -157,15 +157,16 @@ nav:
       - Steam 流.md: Java/Steam 流.md
     - JVM:
       - JMM.md: Java/JMM.md 
+      - GC.md: Java/GC.md 
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
       - 1004. 最大连续1的个数 III.md:  Algorithm/LC/1004. 最大连续1的个数 III.md
       - 101. 对称二叉树.md:  Algorithm/LC/101. 对称二叉树.md
-      - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md
+      - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md    
       - 102. 二叉树的层序遍历.md:  Algorithm/LC/102. 二叉树的层序遍历.md
       - 1046. 最后一块石头的重量.md:  Algorithm/LC/1046. 最后一块石头的重量.md
-      - 1047. 删除字符串中的所有相邻重复项.md:  Algorithm/LC/1047. 删除字符串中的所有相邻重复项.md        
+      - 1047. 删除字符串中的所有相邻重复项.md:  Algorithm/LC/1047. 删除字符串中的所有相邻重复项.md
       - 1052. 爱生气的书店老板.md:  Algorithm/LC/1052. 爱生气的书店老板.md
       - 119. 杨辉三角 II.md:  Algorithm/LC/119. 杨辉三角 II.md
       - 1208. 尽可能使字符串相等.md:  Algorithm/LC/1208. 尽可能使字符串相等.md
@@ -226,6 +227,7 @@ nav:
       - 32. 最长有效括号.md:  Algorithm/LC/32. 最长有效括号.md
       - 329. 矩阵中的最长递增路径.md:  Algorithm/LC/329. 矩阵中的最长递增路径.md
       - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
+      - 331. 验证二叉树的前序序列化.md:  Algorithm/LC/331. 验证二叉树的前序序列化.md
       - 338. 比特位计数.md:  Algorithm/LC/338. 比特位计数.md
       - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
       - 354. 俄罗斯套娃信封问题.md:  Algorithm/LC/354. 俄罗斯套娃信封问题.md
@@ -271,6 +273,7 @@ nav:
       - 697. 数组的度.md:  Algorithm/LC/697. 数组的度.md
       - 70. 爬楼梯.md:  Algorithm/LC/70. 爬楼梯.md
       - 703. 数据流中的第 K 大元素.md:  Algorithm/LC/703. 数据流中的第 K 大元素.md
+      - 705. 设计哈希集合.md:  Algorithm/LC/705. 设计哈希集合.md
       - 714. 买卖股票的最佳时机含手续费.md:  Algorithm/LC/714. 买卖股票的最佳时机含手续费.md
       - 739. 每日温度.md:  Algorithm/LC/739. 每日温度.md
       - 765. 情侣牵手.md:  Algorithm/LC/765. 情侣牵手.md
