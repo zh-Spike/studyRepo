@@ -152,13 +152,17 @@ nav:
       - ArrayList学习.md: Java/ArrayList学习.md
       - 该用Deque了.md: Java/该用Deque了.md
       - Arrays.asList() 源码解析.md: Java/Arrays.asList() 源码解析.md
-    - 高级特性:
       - 并发.md: Java/并发.md
+    - 高级特性:
       - Steam 流.md: Java/Steam 流.md
     - JVM:
       - JVM概.md: Java/JVM概.md 
       - JMM.md: Java/JMM.md 
-      - GC.md: Java/GC.md 
+      - GC.md: Java/GC.md
+  - Network:
+    - 基础:
+      - Network.md: Network/Network.md
+
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
@@ -275,6 +279,7 @@ nav:
       - 70. 爬楼梯.md:  Algorithm/LC/70. 爬楼梯.md
       - 703. 数据流中的第 K 大元素.md:  Algorithm/LC/703. 数据流中的第 K 大元素.md
       - 705. 设计哈希集合.md:  Algorithm/LC/705. 设计哈希集合.md
+      - 706. 设计哈希映射.md:  Algorithm/LC/706. 设计哈希映射.md
       - 714. 买卖股票的最佳时机含手续费.md:  Algorithm/LC/714. 买卖股票的最佳时机含手续费.md
       - 739. 每日温度.md:  Algorithm/LC/739. 每日温度.md
       - 765. 情侣牵手.md:  Algorithm/LC/765. 情侣牵手.md
