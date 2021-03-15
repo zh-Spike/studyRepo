@@ -340,6 +340,7 @@ nav:
       - 第 222 场双周赛: Algorithm/LC/第 222 场周赛.md
   - Tricks:
     - VIM应用: Tricks/vim.md
+    - RESTful API: Tricks/RESTful API.md
   - Others:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md
