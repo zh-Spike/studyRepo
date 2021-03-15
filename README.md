@@ -1,13 +1,13 @@
 ## StudyRepo
 
-学习笔记
+学习笔记 + 批注
 
-主要是 刷题总结，网上博客 + 源码 + 文档 + Stack Overflow 等学习笔记 
+主要是 刷题总结 + 博客 + 文档 + 八股 + Stack Overflow 等
 
 ***
 ### Algorithm
 
-LeetCode，剑指offer，程序员面试金经，程序员面试指南
+LeetCode，剑指offer，程序员面试金典，程序员面试指南
 
 刷题解法 + 总结 
 
@@ -15,6 +15,8 @@ LeetCode，剑指offer，程序员面试金经，程序员面试指南
 ### Java
 
 基础知识
+
+JVM
 
 源码解析
 
