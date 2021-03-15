@@ -164,6 +164,11 @@ nav:
       - Network.md: Network/Network.md
       - NetworkDraft.md: Network/NetworkDraft.md
       - HTTP2HTTPS.md: Network/HTTP2HTTPS.md
+  - OS:
+    - 基础:
+      - OS.md: OS/OS.md
+    - Linux:
+      - Linux.md: OS/Linux.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
@@ -335,7 +340,6 @@ nav:
       - 第 222 场双周赛: Algorithm/LC/第 222 场周赛.md
   - Tricks:
     - VIM应用: Tricks/vim.md
-    - Linux: Tricks/linux.md
   - Others:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md
