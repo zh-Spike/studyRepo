@@ -162,7 +162,8 @@ nav:
   - Network:
     - 基础:
       - Network.md: Network/Network.md
-
+      - NetworkDraft.md: Network/NetworkDraft.md
+      - HTTP2HTTPS.md: Network/HTTP2HTTPS.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
