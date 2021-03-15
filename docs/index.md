@@ -1,38 +1,46 @@
 ## StudyRepo
 
-学习笔记
+学习笔记 + 批注
 
-主要是 刷题总结，网上博客 + 源码 + 文档 + Stack Overflow 等学习笔记 
+主要是 刷题总结 + 博客 + 文档 + 八股 + Stack Overflow 等
 
 ***
-### 算法 Algorithm
+### Algorithm
 
-摊牌了 
-
-LeetCode，剑指offer，程序员面试金经，程序员面试指南
+LeetCode，剑指offer，程序员面试金典，程序员面试指南
 
 刷题解法 + 总结 
-
-IDEA 没我了，怕了怕了 
-
-要是白板 sout 到时候都不会写。。。
 
 ***
 ### Java
 
 基础知识
 
+JVM
+
 源码解析
 
 *** 
+### OS
+
+基础知识
+
+*** 
+
+### NetWork
+
+基础知识
+
+***
 
 ### Tricks
 
-一些工具的技巧和用法
+一些技巧和工具用法
 
 ## MkDoc
 
 参考 [IO Wiki](https://oi-wiki.org/)
 
-https://zh-spike.github.io/studyRepo/
+Github + Travis + Mkdocs 搭建文档库 自动装配
 
+https://zh-spike.github.io/studyRepo/
