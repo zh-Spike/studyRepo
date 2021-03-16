@@ -169,6 +169,12 @@ nav:
       - OS.md: OS/OS.md
     - Linux:
       - Linux.md: OS/Linux.md
+  - Database:
+    - 基础:
+      - Database.md: Database/Database.md
+      - CURD.md: Database/CURD.md
+    - 调优:
+      - Optimize.md: Database/Optimize.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
