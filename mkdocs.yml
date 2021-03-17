@@ -175,6 +175,7 @@ nav:
       - CURD.md: Database/CURD.md
     - 调优:
       - Optimize.md: Database/Optimize.md
+    - Redis.md: Database/Redis.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
@@ -347,6 +348,7 @@ nav:
   - Tricks:
     - VIM应用: Tricks/vim.md
     - RESTful API: Tricks/RESTful API.md
+    - VMware Network DHCP.md: Tricks/VMware Network DHCP.md
   - Others:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md
