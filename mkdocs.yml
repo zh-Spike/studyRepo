@@ -107,8 +107,8 @@ plugins:
 # Content
 nav:
   - Introduction: 
-    - README: index.md
-    - About: about.md
+    - README: Index.md
+    - About: About.md
   - DataStructure:
     - 数据结构:
       - Queue&Stack: Algorithm/Notes/DataStructure/Queue&Stack.md
@@ -172,6 +172,8 @@ nav:
   - Database:
     - 基础:
       - Database.md: Database/Database.md
+      - Index.md: Database/Index.md
+      - Index2.md: Database/Index2.md
       - CURD.md: Database/CURD.md
     - 调优:
       - Optimize.md: Database/Optimize.md
