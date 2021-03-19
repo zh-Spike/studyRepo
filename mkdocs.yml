@@ -180,6 +180,7 @@ nav:
     - 调优:
       - Optimize.md: Database/Optimize.md
     - Redis.md: Database/Redis.md
+    - 缓存常用的3种读写策略.md: Database/缓存常用的3种读写策略.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
