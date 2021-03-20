@@ -107,8 +107,8 @@ plugins:
 # Content
 nav:
   - Introduction: 
-    - README: Index.md
-    - About: About.md
+    - README: index.md
+    - About: about.md
   - DataStructure:
     - 数据结构:
       - Queue&Stack: Algorithm/Notes/DataStructure/Queue&Stack.md
@@ -181,6 +181,9 @@ nav:
       - Optimize.md: Database/Optimize.md
     - Redis.md: Database/Redis.md
     - 缓存常用的3种读写策略.md: Database/缓存常用的3种读写策略.md
+  - Frameworks:
+    - Spring:
+      - Spring.md: Frameworks/Spring.md
   - LeetCode:
     - 题库:
       - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
