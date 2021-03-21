@@ -187,6 +187,7 @@ nav:
       - SpringBoot自动装配.md: Frameworks/SpringBoot自动装配.md
   - Coding:
     - LeetCode:
+      - 191. 位1的个数.md:  Algorithm/LC/191. 位1的个数.md
       - 73. 矩阵置零.md:  Algorithm/LC/73. 矩阵置零.md
       - 150. 逆波兰表达式求值.md:  Algorithm/LC/150. 逆波兰表达式求值.md
       - 1603. 设计停车系统.md:  Algorithm/LC/1603. 设计停车系统.md
