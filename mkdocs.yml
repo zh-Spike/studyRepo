@@ -184,180 +184,180 @@ nav:
   - Frameworks:
     - Spring:
       - Spring.md: Frameworks/Spring.md
-  - LeetCode:
-    - 题库:
-      - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
-      - 1004. 最大连续1的个数 III.md:  Algorithm/LC/1004. 最大连续1的个数 III.md
-      - 101. 对称二叉树.md:  Algorithm/LC/101. 对称二叉树.md
-      - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md    
-      - 102. 二叉树的层序遍历.md:  Algorithm/LC/102. 二叉树的层序遍历.md
-      - 1046. 最后一块石头的重量.md:  Algorithm/LC/1046. 最后一块石头的重量.md
-      - 1047. 删除字符串中的所有相邻重复项.md:  Algorithm/LC/1047. 删除字符串中的所有相邻重复项.md
-      - 1052. 爱生气的书店老板.md:  Algorithm/LC/1052. 爱生气的书店老板.md
-      - 119. 杨辉三角 II.md:  Algorithm/LC/119. 杨辉三角 II.md
-      - 1208. 尽可能使字符串相等.md:  Algorithm/LC/1208. 尽可能使字符串相等.md
-      - 121. 买卖股票的最佳时机.md:  Algorithm/LC/121. 买卖股票的最佳时机.md
-      - 122. 买卖股票的最佳时机 II.md:  Algorithm/LC/122. 买卖股票的最佳时机 II.md
-      - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md
-      - 124. 二叉树中的最大路径和.md:  Algorithm/LC/124. 二叉树中的最大路径和.md
-      - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md
-      - 131. 分割回文串.md:  Algorithm/LC/131. 分割回文串.md
-      - 1312. 让字符串成为回文串的最少插入次数.md:  Algorithm/LC/1312. 让字符串成为回文串的最少插入次数.md
-      - 132. 分割回文串 II.md:  Algorithm/LC/132. 分割回文串 II.md
-      - 133. 克隆图.md:  Algorithm/LC/133. 克隆图.md
-      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md
-      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md
-      - 1363. 形成三的最大倍数.md:  Algorithm/LC/1363. 形成三的最大倍数.md
-      - 1373. 二叉搜索子树的最大键值和.md:  Algorithm/LC/1373. 二叉搜索子树的最大键值和.md
-      - 138. 复制带随机指针的链表.md:  Algorithm/LC/138. 复制带随机指针的链表.md
-      - 1423. 可获得的最大点数.md:  Algorithm/LC/1423. 可获得的最大点数.md
-      - 1438. 绝对差不超过限制的最长连续子数组.md:  Algorithm/LC/1438. 绝对差不超过限制的最长连续子数组.md
-      - 144. 二叉树的前序遍历.md:  Algorithm/LC/144. 二叉树的前序遍历.md
-      - 145. 二叉树的后序遍历.md:  Algorithm/LC/145. 二叉树的后序遍历.md
-      - 146. LRU 缓存机制.md:  Algorithm/LC/146. LRU 缓存机制.md
-      - 149. 直线上最多的点数.md:  Algorithm/LC/149. 直线上最多的点数.md
-      - 15. 三数之和.md:  Algorithm/LC/15. 三数之和.md
+  - Coding:
+    - LeetCode:
+      - 73. 矩阵置零.md:  Algorithm/LC/73. 矩阵置零.md
       - 150. 逆波兰表达式求值.md:  Algorithm/LC/150. 逆波兰表达式求值.md
-      - 1572. 矩阵对角线元素的和.md:  Algorithm/LC/1572. 矩阵对角线元素的和.md
-      - 160. 相交链表.md:  Algorithm/LC/160. 相交链表.md
       - 1603. 设计停车系统.md:  Algorithm/LC/1603. 设计停车系统.md
-      - 1631. 最小体力消耗路径.md:  Algorithm/LC/1631. 最小体力消耗路径.md
-      - 164. 最大间距.md:  Algorithm/LC/164. 最大间距.md
-      - 1647. 字符频次唯一的最小删除次数.md:  Algorithm/LC/1647. 字符频次唯一的最小删除次数.md
-      - 167. 两数之和 II - 输入有序数组.md:  Algorithm/LC/167. 两数之和 II - 输入有序数组.md
-      - 188. 买卖股票的最佳时机 IV.md:  Algorithm/LC/188. 买卖股票的最佳时机 IV.md
-      - 189. 旋转数组.md:  Algorithm/LC/189. 旋转数组.md
-      - 200. 岛屿数量.md:  Algorithm/LC/200. 岛屿数量.md
-      - 205. 同构字符串.md:  Algorithm/LC/205. 同构字符串.md
-      - 206. 反转链表.md:  Algorithm/LC/206. 反转链表.md
-      - 208. 实现 Trie (前缀树).md:  Algorithm/LC/208. 实现 Trie (前缀树).md
-      - 21. 合并两个有序链表.md:  Algorithm/LC/21. 合并两个有序链表.md
-      - 214. 最短回文串.md:  Algorithm/LC/214. 最短回文串.md
-      - 215. 数组中的第K个最大元素.md:  Algorithm/LC/215. 数组中的第K个最大元素.md
-      - 222. 完全二叉树的节点个数.md:  Algorithm/LC/222. 完全二叉树的节点个数.md
-      - 224. 基本计算器.md:  Algorithm/LC/224. 基本计算器.md
-      - 225. 用队列实现栈.md:  Algorithm/LC/225. 用队列实现栈.md
-      - 227. 基本计算器 II.md:  Algorithm/LC/227. 基本计算器 II.md
-      - 228. 汇总区间.md:  Algorithm/LC/228. 汇总区间.md
-      - 23. 合并K个升序链表.md:  Algorithm/LC/23. 合并K个升序链表.md
-      - 232. 用栈实现队列.md:  Algorithm/LC/232. 用栈实现队列.md
-      - 234. 回文链表.md:  Algorithm/LC/234. 回文链表.md
-      - 239. 滑动窗口最大值.md:  Algorithm/LC/239. 滑动窗口最大值.md
-      - 242. 有效的字母异位词.md:  Algorithm/LC/242. 有效的字母异位词.md
-      - 28. 实现 strStr().md:  Algorithm/LC/28. 实现 strStr().md
-      - 3. 无重复字符的最长子串.md:  Algorithm/LC/3. 无重复字符的最长子串.md
-      - 300. 最长递增子序列.md:  Algorithm/LC/300. 最长递增子序列.md
-      - 303. 区域和检索 - 数组不可变.md:  Algorithm/LC/303. 区域和检索 - 数组不可变.md
-      - 304. 二维区域和检索 - 矩阵不可变.md:  Algorithm/LC/304. 二维区域和检索 - 矩阵不可变.md
-      - 309. 最佳买卖股票时机含冷冻期.md:  Algorithm/LC/309. 最佳买卖股票时机含冷冻期.md
-      - 315. 计算右侧小于当前元素的个数.md:  Algorithm/LC/315. 计算右侧小于当前元素的个数.md
-      - 316. 去除重复字母.md:  Algorithm/LC/316. 去除重复字母.md
-      - 32. 最长有效括号.md:  Algorithm/LC/32. 最长有效括号.md
-      - 329. 矩阵中的最长递增路径.md:  Algorithm/LC/329. 矩阵中的最长递增路径.md
-      - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
+      - 706. 设计哈希映射.md:  Algorithm/LC/706. 设计哈希映射.md
+      - 705. 设计哈希集合.md:  Algorithm/LC/705. 设计哈希集合.md
       - 331. 验证二叉树的前序序列化.md:  Algorithm/LC/331. 验证二叉树的前序序列化.md
-      - 338. 比特位计数.md:  Algorithm/LC/338. 比特位计数.md
-      - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
+      - 227. 基本计算器 II.md:  Algorithm/LC/227. 基本计算器 II.md
+      - 224. 基本计算器.md:  Algorithm/LC/224. 基本计算器.md
+      - 1047. 删除字符串中的所有相邻重复项.md:  Algorithm/LC/1047. 删除字符串中的所有相邻重复项.md
+      - 132. 分割回文串 II.md:  Algorithm/LC/132. 分割回文串 II.md
+      - 131. 分割回文串.md:  Algorithm/LC/131. 分割回文串.md
+      - 133. 克隆图.md:  Algorithm/LC/133. 克隆图.md
+      - 329. 矩阵中的最长递增路径.md:  Algorithm/LC/329. 矩阵中的最长递增路径.md
+      - 1312. 让字符串成为回文串的最少插入次数.md:  Algorithm/LC/1312. 让字符串成为回文串的最少插入次数.md
+      - 442. 数组中重复的数据.md:  Algorithm/LC/442. 数组中重复的数据.md
+      - 41. 缺失的第一个正数.md:  Algorithm/LC/41. 缺失的第一个正数.md
       - 354. 俄罗斯套娃信封问题.md:  Algorithm/LC/354. 俄罗斯套娃信封问题.md
+      - 632. 最小区间.md:  Algorithm/LC/632. 最小区间.md
+      - 338. 比特位计数.md:  Algorithm/LC/338. 比特位计数.md
+      - 391. 完美矩形.md:  Algorithm/LC/391. 完美矩形.md
+      - 15. 三数之和.md:  Algorithm/LC/15. 三数之和.md
+      - 167. 两数之和 II - 输入有序数组.md:  Algorithm/LC/167. 两数之和 II - 输入有序数组.md
+      - 21. 合并两个有序链表.md:  Algorithm/LC/21. 合并两个有序链表.md
+      - 443. 压缩字符串.md:  Algorithm/LC/443. 压缩字符串.md
+      - 214. 最短回文串.md:  Algorithm/LC/214. 最短回文串.md
+      - 100. 相同的树.md:  Algorithm/LC/100. 相同的树.md
+      - 304. 二维区域和检索 - 矩阵不可变.md:  Algorithm/LC/304. 二维区域和检索 - 矩阵不可变.md
+      - 303. 区域和检索 - 数组不可变.md:  Algorithm/LC/303. 区域和检索 - 数组不可变.md
+      - 952. 按公因数计算最大组件大小.md:  Algorithm/LC/952. 按公因数计算最大组件大小.md
+      - 330. 按要求补齐数组.md:  Algorithm/LC/330. 按要求补齐数组.md
+      - 896. 单调数列.md:  Algorithm/LC/896. 单调数列.md
+      - 581. 最短无序连续子数组.md:  Algorithm/LC/581. 最短无序连续子数组.md
+      - 1013. 将数组分成和相等的三个部分.md:  Algorithm/LC/1013. 将数组分成和相等的三个部分.md
       - 373. 查找和最小的K对数字.md:  Algorithm/LC/373. 查找和最小的K对数字.md
       - 378. 有序矩阵中第 K 小的元素.md:  Algorithm/LC/378. 有序矩阵中第 K 小的元素.md
-      - 386. 字典序排数.md:  Algorithm/LC/386. 字典序排数.md
-      - 391. 完美矩形.md:  Algorithm/LC/391. 完美矩形.md
-      - 399. 除法求值.md:  Algorithm/LC/399. 除法求值.md
-      - 41. 缺失的第一个正数.md:  Algorithm/LC/41. 缺失的第一个正数.md
-      - 42. 接雨水.md:  Algorithm/LC/42. 接雨水.md
-      - 424. 替换后的最长重复字符.md:  Algorithm/LC/424. 替换后的最长重复字符.md
-      - 435. 无重叠区间.md:  Algorithm/LC/435. 无重叠区间.md
-      - 440. 字典序的第K小数字.md:  Algorithm/LC/440. 字典序的第K小数字.md
-      - 442. 数组中重复的数据.md:  Algorithm/LC/442. 数组中重复的数据.md
-      - 443. 压缩字符串.md:  Algorithm/LC/443. 压缩字符串.md
-      - 448. 找到所有数组中消失的数字.md:  Algorithm/LC/448. 找到所有数组中消失的数字.md
-      - 45. 跳跃游戏 II.md:  Algorithm/LC/45. 跳跃游戏 II.md
-      - 451. 根据字符出现频率排序.md:  Algorithm/LC/451. 根据字符出现频率排序.md
-      - 459. 重复的子字符串.md:  Algorithm/LC/459. 重复的子字符串.md
-      - 470. 用 Rand7() 实现 Rand10().md:  Algorithm/LC/470. 用 Rand7() 实现 Rand10().md
-      - 480. 滑动窗口中位数.md:  Algorithm/LC/480. 滑动窗口中位数.md
-      - 485. 最大连续1的个数.md:  Algorithm/LC/485. 最大连续1的个数.md
-      - 496. 下一个更大元素 I.md:  Algorithm/LC/496. 下一个更大元素 I.md
-      - 498. 对角线遍历.md:  Algorithm/LC/498. 对角线遍历.md
-      - 5. 最长回文子串.md:  Algorithm/LC/5. 最长回文子串.md
-      - 502. IPO.md:  Algorithm/LC/502. IPO.md
-      - 503. 下一个更大元素 II.md:  Algorithm/LC/503. 下一个更大元素 II.md
-      - 509. 斐波那契数.md:  Algorithm/LC/509. 斐波那契数.md
-      - 517. 超级洗衣机.md:  Algorithm/LC/517. 超级洗衣机.md
-      - 547. 省份数量.md:  Algorithm/LC/547. 省份数量.md
-      - 55. 跳跃游戏.md:  Algorithm/LC/55. 跳跃游戏.md
-      - 561. 数组拆分 I.md:  Algorithm/LC/561. 数组拆分 I.md
-      - 566. 重塑矩阵.md:  Algorithm/LC/566. 重塑矩阵.md
-      - 567. 字符串的排列.md:  Algorithm/LC/567. 字符串的排列.md
-      - 581. 最短无序连续子数组.md:  Algorithm/LC/581. 最短无序连续子数组.md
-      - 589. N叉树的前序遍历.md:  Algorithm/LC/589. N叉树的前序遍历.md
-      - 59. 螺旋矩阵 II.md:  Algorithm/LC/59. 螺旋矩阵 II.md
-      - 605. 种花问题.md:  Algorithm/LC/605. 种花问题.md
-      - 632. 最小区间.md:  Algorithm/LC/632. 最小区间.md
-      - 643. 子数组最大平均数 I.md:  Algorithm/LC/643. 子数组最大平均数 I.md
-      - 650. 只有两个键的键盘.md:  Algorithm/LC/650. 只有两个键的键盘.md
-      - 688. “马”在棋盘上的概率.md:  Algorithm/LC/688. “马”在棋盘上的概率.md
-      - 697. 数组的度.md:  Algorithm/LC/697. 数组的度.md
-      - 70. 爬楼梯.md:  Algorithm/LC/70. 爬楼梯.md
-      - 703. 数据流中的第 K 大元素.md:  Algorithm/LC/703. 数据流中的第 K 大元素.md
-      - 705. 设计哈希集合.md:  Algorithm/LC/705. 设计哈希集合.md
-      - 706. 设计哈希映射.md:  Algorithm/LC/706. 设计哈希映射.md
-      - 714. 买卖股票的最佳时机含手续费.md:  Algorithm/LC/714. 买卖股票的最佳时机含手续费.md
-      - 739. 每日温度.md:  Algorithm/LC/739. 每日温度.md
-      - 765. 情侣牵手.md:  Algorithm/LC/765. 情侣牵手.md
-      - 766. 托普利茨矩阵.md:  Algorithm/LC/766. 托普利茨矩阵.md
-      - 778. 水位上升的泳池中游泳.md:  Algorithm/LC/778. 水位上升的泳池中游泳.md
-      - 796. 旋转字符串.md:  Algorithm/LC/796. 旋转字符串.md
-      - 830. 较大分组的位置.md:  Algorithm/LC/830. 较大分组的位置.md
-      - 832. 翻转图像.md:  Algorithm/LC/832. 翻转图像.md
-      - 84. 柱状图中最大的矩形.md:  Algorithm/LC/84. 柱状图中最大的矩形.md
-      - 86. 分隔链表.md:  Algorithm/LC/86. 分隔链表.md
-      - 896. 单调数列.md:  Algorithm/LC/896. 单调数列.md
-      - 915. 分割数组.md:  Algorithm/LC/915. 分割数组.md
-      - 92. 反转链表 II.md:  Algorithm/LC/92. 反转链表 II.md
-      - 921. 使括号有效的最少添加.md:  Algorithm/LC/921. 使括号有效的最少添加.md
-      - 94. 二叉树的中序遍历.md:  Algorithm/LC/94. 二叉树的中序遍历.md
-      - 944. 删列造序.md:  Algorithm/LC/944. 删列造序.md
-      - 95. 不同的二叉搜索树 II.md:  Algorithm/LC/95. 不同的二叉搜索树 II.md
-      - 952. 按公因数计算最大组件大小.md:  Algorithm/LC/952. 按公因数计算最大组件大小.md
-      - 96. 不同的二叉搜索树.md:  Algorithm/LC/96. 不同的二叉搜索树.md
       - 97. 交错字符串.md:  Algorithm/LC/97. 交错字符串.md
+      - 149. 直线上最多的点数.md:  Algorithm/LC/149. 直线上最多的点数.md
+      - 55. 跳跃游戏.md:  Algorithm/LC/55. 跳跃游戏.md
+      - 45. 跳跃游戏 II.md:  Algorithm/LC/45. 跳跃游戏 II.md
+      - 146. LRU 缓存机制.md:  Algorithm/LC/146. LRU 缓存机制.md
+      - 832. 翻转图像.md:  Algorithm/LC/832. 翻转图像.md
+      - 316. 去除重复字母.md:  Algorithm/LC/316. 去除重复字母.md
+      - 3. 无重复字符的最长子串.md:  Algorithm/LC/3. 无重复字符的最长子串.md
+      - 300. 最长递增子序列.md:  Algorithm/LC/300. 最长递增子序列.md
+      - 1052. 爱生气的书店老板.md:  Algorithm/LC/1052. 爱生气的书店老板.md
+      - 222. 完全二叉树的节点个数.md:  Algorithm/LC/222. 完全二叉树的节点个数.md
+      - 1373. 二叉搜索子树的最大键值和.md:  Algorithm/LC/1373. 二叉搜索子树的最大键值和.md
+      - 124. 二叉树中的最大路径和.md:  Algorithm/LC/124. 二叉树中的最大路径和.md
+      - 766. 托普利茨矩阵.md:  Algorithm/LC/766. 托普利茨矩阵.md
+      - 1438. 绝对差不超过限制的最长连续子数组.md:  Algorithm/LC/1438. 绝对差不超过限制的最长连续子数组.md
+      - 32. 最长有效括号.md:  Algorithm/LC/32. 最长有效括号.md
+      - 921. 使括号有效的最少添加.md:  Algorithm/LC/921. 使括号有效的最少添加.md
+      - 70. 爬楼梯.md:  Algorithm/LC/70. 爬楼梯.md
+      - 697. 数组的度.md:  Algorithm/LC/697. 数组的度.md
+      - 95. 不同的二叉搜索树 II.md:  Algorithm/LC/95. 不同的二叉搜索树 II.md
+      - 96. 不同的二叉搜索树.md:  Algorithm/LC/96. 不同的二叉搜索树.md
+      - 915. 分割数组.md:  Algorithm/LC/915. 分割数组.md
+      - 796. 旋转字符串.md:  Algorithm/LC/796. 旋转字符串.md
+      - 242. 有效的字母异位词.md:  Algorithm/LC/242. 有效的字母异位词.md
+      - 232. 用栈实现队列.md:  Algorithm/LC/232. 用栈实现队列.md
+      - 225. 用队列实现栈.md:  Algorithm/LC/225. 用队列实现栈.md
+      - 1004. 最大连续1的个数 III.md:  Algorithm/LC/1004. 最大连续1的个数 III.md
+      - 517. 超级洗衣机.md:  Algorithm/LC/517. 超级洗衣机.md
+      - 498. 对角线遍历.md:  Algorithm/LC/498. 对角线遍历.md
+      - 59. 螺旋矩阵 II.md:  Algorithm/LC/59. 螺旋矩阵 II.md
+      - 347. 前 K 个高频元素.md:  Algorithm/LC/347. 前 K 个高频元素.md
+      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md
+      - 129. 求根到叶子节点数字之和.md:  Algorithm/LC/129. 求根到叶子节点数字之和.md
+      - 688. “马”在棋盘上的概率.md:  Algorithm/LC/688. “马”在棋盘上的概率.md
+      - 451. 根据字符出现频率排序.md:  Algorithm/LC/451. 根据字符出现频率排序.md
+      - 566. 重塑矩阵.md:  Algorithm/LC/566. 重塑矩阵.md
+      - 470. 用 Rand7() 实现 Rand10().md:  Algorithm/LC/470. 用 Rand7() 实现 Rand10().md
+      - 1337. 矩阵中战斗力最弱的 K 行.md:  Algorithm/LC/1337. 矩阵中战斗力最弱的 K 行.md
+      - 561. 数组拆分 I.md:  Algorithm/LC/561. 数组拆分 I.md
+      - 485. 最大连续1的个数.md:  Algorithm/LC/485. 最大连续1的个数.md
+      - 765. 情侣牵手.md:  Algorithm/LC/765. 情侣牵手.md
+      - 448. 找到所有数组中消失的数字.md:  Algorithm/LC/448. 找到所有数组中消失的数字.md
+      - 119. 杨辉三角 II.md:  Algorithm/LC/119. 杨辉三角 II.md
+      - 84. 柱状图中最大的矩形.md:  Algorithm/LC/84. 柱状图中最大的矩形.md
+      - 42. 接雨水.md:  Algorithm/LC/42. 接雨水.md
+      - 739. 每日温度.md:  Algorithm/LC/739. 每日温度.md
+      - 503. 下一个更大元素 II.md:  Algorithm/LC/503. 下一个更大元素 II.md
+      - 703. 数据流中的第 K 大元素.md:  Algorithm/LC/703. 数据流中的第 K 大元素.md
+      - 496. 下一个更大元素 I.md:  Algorithm/LC/496. 下一个更大元素 I.md
+      - 459. 重复的子字符串.md:  Algorithm/LC/459. 重复的子字符串.md
+      - 5. 最长回文子串.md:  Algorithm/LC/5. 最长回文子串.md
+      - 567. 字符串的排列.md:  Algorithm/LC/567. 字符串的排列.md
+      - 28. 实现 strStr().md:  Algorithm/LC/28. 实现 strStr().md
+      - 200. 岛屿数量.md:  Algorithm/LC/200. 岛屿数量.md
+      - 992. K 个不同整数的子数组.md:  Algorithm/LC/992. K 个不同整数的子数组.md
+      - 944. 删列造序.md:  Algorithm/LC/944. 删列造序.md
+      - 502. IPO.md:  Algorithm/LC/502. IPO.md
+      - 1353. 最多可以参加的会议数目.md:  Algorithm/LC/1353. 最多可以参加的会议数目.md
+      - 208. 实现 Trie (前缀树).md:  Algorithm/LC/208. 实现 Trie (前缀树).md
       - 978. 最长湍流子数组.md:  Algorithm/LC/978. 最长湍流子数组.md
       - 98. 验证二叉搜索树.md:  Algorithm/LC/98. 验证二叉搜索树.md
-      - 992. K 个不同整数的子数组.md:  Algorithm/LC/992. K 个不同整数的子数组.md
-      - 995. K 连续位的最小翻转次数.md:  Algorithm/LC/995. K 连续位的最小翻转次数.md
+      - 101. 对称二叉树.md:  Algorithm/LC/101. 对称二叉树.md
+      - 102. 二叉树的层序遍历.md:  Algorithm/LC/102. 二叉树的层序遍历.md
+      - 1423. 可获得的最大点数.md:  Algorithm/LC/1423. 可获得的最大点数.md
+      - 94. 二叉树的中序遍历.md:  Algorithm/LC/94. 二叉树的中序遍历.md
+      - 144. 二叉树的前序遍历.md:  Algorithm/LC/144. 二叉树的前序遍历.md
+      - 145. 二叉树的后序遍历.md:  Algorithm/LC/145. 二叉树的后序遍历.md
+      - 1208. 尽可能使字符串相等.md:  Algorithm/LC/1208. 尽可能使字符串相等.md
+      - 138. 复制带随机指针的链表.md:  Algorithm/LC/138. 复制带随机指针的链表.md
+      - 234. 回文链表.md:  Algorithm/LC/234. 回文链表.md
+      - 160. 相交链表.md:  Algorithm/LC/160. 相交链表.md
+      - 92. 反转链表 II.md:  Algorithm/LC/92. 反转链表 II.md
+      - 206. 反转链表.md:  Algorithm/LC/206. 反转链表.md
+      - 643. 子数组最大平均数 I.md:  Algorithm/LC/643. 子数组最大平均数 I.md
+      - 164. 最大间距.md:  Algorithm/LC/164. 最大间距.md
+      - 480. 滑动窗口中位数.md:  Algorithm/LC/480. 滑动窗口中位数.md
+      - 424. 替换后的最长重复字符.md:  Algorithm/LC/424. 替换后的最长重复字符.md
+      - 23. 合并K个升序链表.md:  Algorithm/LC/23. 合并K个升序链表.md
+      - 215. 数组中的第K个最大元素.md:  Algorithm/LC/215. 数组中的第K个最大元素.md
+      - 315. 计算右侧小于当前元素的个数.md:  Algorithm/LC/315. 计算右侧小于当前元素的个数.md
+      - 778. 水位上升的泳池中游泳.md:  Algorithm/LC/778. 水位上升的泳池中游泳.md
+      - 1631. 最小体力消耗路径.md:  Algorithm/LC/1631. 最小体力消耗路径.md
+      - 228. 汇总区间.md:  Algorithm/LC/228. 汇总区间.md
+      - 547. 省份数量.md:  Algorithm/LC/547. 省份数量.md
+      - 189. 旋转数组.md:  Algorithm/LC/189. 旋转数组.md
+      - 399. 除法求值.md:  Algorithm/LC/399. 除法求值.md
+      - 830. 较大分组的位置.md:  Algorithm/LC/830. 较大分组的位置.md
+      - 509. 斐波那契数.md:  Algorithm/LC/509. 斐波那契数.md
+      - 86. 分隔链表.md:  Algorithm/LC/86. 分隔链表.md
+      - 589. N叉树的前序遍历.md:  Algorithm/LC/589. N叉树的前序遍历.md
+      - 386. 字典序排数.md:  Algorithm/LC/386. 字典序排数.md
+      - 440. 字典序的第K小数字.md:  Algorithm/LC/440. 字典序的第K小数字.md
+      - 239. 滑动窗口最大值.md:  Algorithm/LC/239. 滑动窗口最大值.md
+      - 1363. 形成三的最大倍数.md:  Algorithm/LC/1363. 形成三的最大倍数.md
+      - 309. 最佳买卖股票时机含冷冻期.md:  Algorithm/LC/309. 最佳买卖股票时机含冷冻期.md
+      - 714. 买卖股票的最佳时机含手续费.md:  Algorithm/LC/714. 买卖股票的最佳时机含手续费.md
+      - 123. 买卖股票的最佳时机 III.md:  Algorithm/LC/123. 买卖股票的最佳时机 III.md
+      - 122. 买卖股票的最佳时机 II.md:  Algorithm/LC/122. 买卖股票的最佳时机 II.md
+      - 121. 买卖股票的最佳时机.md:  Algorithm/LC/121. 买卖股票的最佳时机.md
+      - 605. 种花问题.md:  Algorithm/LC/605. 种花问题.md
+      - 650. 只有两个键的键盘.md:  Algorithm/LC/650. 只有两个键的键盘.md
+      - 1647. 字符频次唯一的最小删除次数.md:  Algorithm/LC/1647. 字符频次唯一的最小删除次数.md
+      - 1572. 矩阵对角线元素的和.md:  Algorithm/LC/1572. 矩阵对角线元素的和.md
+      - 435. 无重叠区间.md:  Algorithm/LC/435. 无重叠区间.md
+      - 1046. 最后一块石头的重量.md:  Algorithm/LC/1046. 最后一块石头的重量.md
+      - 188. 买卖股票的最佳时机 IV.md:  Algorithm/LC/188. 买卖股票的最佳时机 IV.md
+      - 205. 同构字符串.md:  Algorithm/LC/205. 同构字符串.md
     - 剑指OFFER:
-      - 剑指 Offer 04. 二维数组中的查找.md:  Algorithm/LC/剑指 Offer 04. 二维数组中的查找.md
-      - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md:  Algorithm/LC/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
-      - 剑指 Offer 29. 顺时针打印矩阵.md:  Algorithm/LC/剑指 Offer 29. 顺时针打印矩阵.md
-      - 剑指 Offer 37. 序列化二叉树.md:  Algorithm/LC/剑指 Offer 37. 序列化二叉树.md
-      - 剑指 Offer 40. 最小的k个数.md:  Algorithm/LC/剑指 Offer 40. 最小的k个数.md
-      - 剑指 Offer 41. 数据流中的中位数.md:  Algorithm/LC/剑指 Offer 41. 数据流中的中位数.md
-      - 剑指 Offer 42. 连续子数组的最大和.md:  Algorithm/LC/剑指 Offer 42. 连续子数组的最大和.md
-      - 剑指 Offer 46. 把数字翻译成字符串.md:  Algorithm/LC/剑指 Offer 46. 把数字翻译成字符串.md
-      - 剑指 Offer 49. 丑数.md:  Algorithm/LC/剑指 Offer 49. 丑数.md
-      - 剑指 Offer 51. 数组中的逆序对.md:  Algorithm/LC/剑指 Offer 51. 数组中的逆序对.md
-      - 剑指 Offer 61. 扑克牌中的顺子.md:  Algorithm/LC/剑指 Offer 61. 扑克牌中的顺子.md
-      - 剑指 Offer 68 - II. 二叉树的最近公共祖先.md:  Algorithm/LC/剑指 Offer 68 - II. 二叉树的最近公共祖先.md
-    - 金经:
-      - 面试题 01.06. 字符串压缩.md:  Algorithm/LC/面试题 01.06. 字符串压缩.md
-      - 面试题 01.07. 旋转矩阵.md:  Algorithm/LC/面试题 01.07. 旋转矩阵.md
-      - 面试题 02.08. 环路检测.md:  Algorithm/LC/面试题 02.08. 环路检测.md
-      - 面试题 03.02. 栈的最小值.md:  Algorithm/LC/面试题 03.02. 栈的最小值.md
-      - 面试题 03.05. 栈排序.md:  Algorithm/LC/面试题 03.05. 栈排序.md
-      - 面试题 04.04. 检查平衡性.md:  Algorithm/LC/面试题 04.04. 检查平衡性.md
-      - 面试题 04.06. 后继者.md:  Algorithm/LC/面试题 04.06. 后继者.md
-      - 面试题 04.10. 检查子树.md:  Algorithm/LC/面试题 04.10. 检查子树.md
-      - 面试题 17.24. 最大子矩阵.md:  Algorithm/LC/面试题 17.24. 最大子矩阵.md
+      - 剑指 Offer 51. 数组中的逆序对.md:  Algorithm/剑指/剑指 Offer 51. 数组中的逆序对.md
+      - 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md:  Algorithm/剑指/剑指 Offer 21. 调整数组顺序使奇数位于偶数前面.md
+      - 剑指 Offer 41. 数据流中的中位数.md:  Algorithm/剑指/剑指 Offer 41. 数据流中的中位数.md
+      - 剑指 Offer 40. 最小的k个数.md:  Algorithm/剑指/剑指 Offer 40. 最小的k个数.md
+      - 剑指 Offer 68 - II. 二叉树的最近公共祖先.md:  Algorithm/剑指/剑指 Offer 68 - II. 二叉树的最近公共祖先.md
+      - 剑指 Offer 37. 序列化二叉树.md:  Algorithm/剑指/剑指 Offer 37. 序列化二叉树.md
+      - 剑指 Offer 61. 扑克牌中的顺子.md:  Algorithm/剑指/剑指 Offer 61. 扑克牌中的顺子.md
+      - 剑指 Offer 46. 把数字翻译成字符串.md:  Algorithm/剑指/剑指 Offer 46. 把数字翻译成字符串.md
+      - 剑指 Offer 29. 顺时针打印矩阵.md:  Algorithm/剑指/剑指 Offer 29. 顺时针打印矩阵.md
+      - 剑指 Offer 42. 连续子数组的最大和.md:  Algorithm/剑指/剑指 Offer 42. 连续子数组的最大和.md
+      - 剑指 Offer 49. 丑数.md:  Algorithm/剑指/剑指 Offer 49. 丑数.md
+    - 程序员面试金典:
+      - 面试题 01.06. 字符串压缩.md:  Algorithm/金典/面试题 01.06. 字符串压缩.md
+      - 面试题 04.10. 检查子树.md:  Algorithm/金典/面试题 04.10. 检查子树.md
+      - 面试题 17.24. 最大子矩阵.md:  Algorithm/金典/面试题 17.24. 最大子矩阵.md
+      - 面试题 03.05. 栈排序.md:  Algorithm/金典/面试题 03.05. 栈排序.md
+      - 面试题 03.02. 栈的最小值.md:  Algorithm/金典/面试题 03.02. 栈的最小值.md
+      - 面试题 01.07. 旋转矩阵.md:  Algorithm/金典/面试题 01.07. 旋转矩阵.md
+      - 面试题 04.04. 检查平衡性.md:  Algorithm/金典/面试题 04.04. 检查平衡性.md
+      - 面试题 04.06. 后继者.md:  Algorithm/金典/面试题 04.06. 后继者.md
+      - 面试题 02.08. 环路检测.md:  Algorithm/金典/面试题 02.08. 环路检测.md
     - 周赛: 
-      - 第 42 场双周赛: Algorithm/LC/第 42 场双周赛.md
-      - 第 43 场双周赛: Algorithm/LC/第 43 场双周赛.md
-      - 第 48 场双周赛: Algorithm/LC/第 48 场双周赛.md
-      - 第 221 场周赛: Algorithm/LC/第 221 场周赛.md
-      - 第 222 场双周赛: Algorithm/LC/第 222 场周赛.md
+      - 第 48 场双周赛.md:  Algorithm/周赛/第 48 场双周赛.md
+      - 第 43 场双周赛.md:  Algorithm/周赛/第 43 场双周赛.md
+      - 第 222 场周赛.md:  Algorithm/周赛/第 222 场周赛.md
+      - 第 42 场双周赛.md:  Algorithm/周赛/第 42 场双周赛.md
+      - 第 221 场周赛.md:  Algorithm/周赛/第 221 场周赛.md
     - 牛客:
-      - NC41最长无重复子串: Algorithm/LC/NC41最长无重复子串.md
+      - NC41最长无重复子串.md:  Algorithm/NC/NC41最长无重复子串.md
   - Tricks:
     - VIM应用: Tricks/vim.md
     - RESTful API: Tricks/RESTful API.md
