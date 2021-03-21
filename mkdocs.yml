@@ -184,6 +184,7 @@ nav:
   - Frameworks:
     - Spring:
       - Spring.md: Frameworks/Spring.md
+      - SpringBoot自动装配.md: Frameworks/SpringBoot自动装配.md
   - Coding:
     - LeetCode:
       - 73. 矩阵置零.md:  Algorithm/LC/73. 矩阵置零.md
