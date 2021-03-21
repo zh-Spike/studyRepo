@@ -353,8 +353,11 @@ nav:
     - 周赛: 
       - 第 42 场双周赛: Algorithm/LC/第 42 场双周赛.md
       - 第 43 场双周赛: Algorithm/LC/第 43 场双周赛.md
+      - 第 48 场双周赛: Algorithm/LC/第 48 场双周赛.md
       - 第 221 场周赛: Algorithm/LC/第 221 场周赛.md
       - 第 222 场双周赛: Algorithm/LC/第 222 场周赛.md
+    - 牛客:
+      - NC41最长无重复子串: Algorithm/LC/NC41最长无重复子串.md
   - Tricks:
     - VIM应用: Tricks/vim.md
     - RESTful API: Tricks/RESTful API.md
