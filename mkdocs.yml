@@ -186,6 +186,7 @@ nav:
       - Spring.md: Frameworks/Spring.md
       - SpringBoot自动装配.md: Frameworks/SpringBoot自动装配.md
     - RPC.md: Frameworks/RPC.md
+    - 分布式理论.md: Frameworks/分布式理论.md
   - Coding:
     - LeetCode:
       - 191. 位1的个数.md:  Algorithm/LC/191. 位1的个数.md
