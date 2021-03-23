@@ -189,6 +189,7 @@ nav:
     - 分布式理论.md: Frameworks/分布式理论.md
   - Coding:
     - LeetCode:
+      - 341. 扁平化嵌套列表迭代器.md:  Algorithm/LC/341. 扁平化嵌套列表迭代器.md
       - 191. 位1的个数.md:  Algorithm/LC/191. 位1的个数.md
       - 73. 矩阵置零.md:  Algorithm/LC/73. 矩阵置零.md
       - 150. 逆波兰表达式求值.md:  Algorithm/LC/150. 逆波兰表达式求值.md
