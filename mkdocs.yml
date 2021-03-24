@@ -189,6 +189,7 @@ nav:
     - 分布式理论.md: Frameworks/分布式理论.md
   - Coding:
     - LeetCode:
+      - 456. 132模式.md:  Algorithm/LC/456. 132模式.md
       - 341. 扁平化嵌套列表迭代器.md:  Algorithm/LC/341. 扁平化嵌套列表迭代器.md
       - 191. 位1的个数.md:  Algorithm/LC/191. 位1的个数.md
       - 73. 矩阵置零.md:  Algorithm/LC/73. 矩阵置零.md
