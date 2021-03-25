@@ -187,6 +187,10 @@ nav:
       - SpringBoot自动装配.md: Frameworks/SpringBoot自动装配.md
     - RPC.md: Frameworks/RPC.md
     - 分布式理论.md: Frameworks/分布式理论.md
+    - Security:
+      - Security.md: Frameworks/Security.md
+      - JWT.md: Frameworks/JWT.md
+      - SSO.md: Frameworks/SSO.md
   - Coding:
     - LeetCode:
       - 456. 132模式.md:  Algorithm/LC/456. 132模式.md
