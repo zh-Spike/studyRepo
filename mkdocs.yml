@@ -193,6 +193,8 @@ nav:
       - SSO.md: Frameworks/SSO.md
   - Coding:
     - LeetCode:
+      - 83. 删除排序链表中的重复元素.md:  Algorithm/LC/83. 删除排序链表中的重复元素.md
+      - 82. 删除排序链表中的重复元素 II.md:  Algorithm/LC/82. 删除排序链表中的重复元素 II.md
       - 456. 132模式.md:  Algorithm/LC/456. 132模式.md
       - 341. 扁平化嵌套列表迭代器.md:  Algorithm/LC/341. 扁平化嵌套列表迭代器.md
       - 191. 位1的个数.md:  Algorithm/LC/191. 位1的个数.md
