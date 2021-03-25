@@ -191,6 +191,8 @@ nav:
       - Security.md: Frameworks/Security.md
       - JWT.md: Frameworks/JWT.md
       - SSO.md: Frameworks/SSO.md
+    - MQ:
+      - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
       - 83. 删除排序链表中的重复元素.md:  Algorithm/LC/83. 删除排序链表中的重复元素.md
