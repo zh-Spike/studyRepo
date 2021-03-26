@@ -198,6 +198,7 @@ nav:
       - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
+      - 61. 旋转链表.md:  Algorithm/LC/61. 旋转链表.md
       - 83. 删除排序链表中的重复元素.md:  Algorithm/LC/83. 删除排序链表中的重复元素.md
       - 82. 删除排序链表中的重复元素 II.md:  Algorithm/LC/82. 删除排序链表中的重复元素 II.md
       - 456. 132模式.md:  Algorithm/LC/456. 132模式.md
