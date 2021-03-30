@@ -386,6 +386,8 @@ nav:
     - RESTful API: Tricks/RESTful API.md
     - VMware Network DHCP.md: Tricks/VMware Network DHCP.md
     - 八股的神.md: Tricks/八股的神.md
+    - 复盘:
+      - PCG复盘.md: Tricks/PCG复盘.md
   - Others:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md
