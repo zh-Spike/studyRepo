@@ -198,6 +198,7 @@ nav:
       - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
+      - 1143. 最长公共子序列.md:  Algorithm/LC/1143. 最长公共子序列.md
       - 74. 搜索二维矩阵.md:  Algorithm/LC/74. 搜索二维矩阵.md
       - 190. 颠倒二进制位.md:  Algorithm/LC/190. 颠倒二进制位.md
       - 173. 二叉搜索树迭代器.md:  Algorithm/LC/173. 二叉搜索树迭代器.md
