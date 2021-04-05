@@ -191,13 +191,17 @@ nav:
     - RPC.md: Frameworks/RPC.md
     - 分布式理论.md: Frameworks/分布式理论.md
     - Security:
-      - Security.md: Frameworks/Security.md
+      - Security.md: Frameworks\/Security.md
       - JWT.md: Frameworks/JWT.md
       - SSO.md: Frameworks/SSO.md
     - MQ:
       - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
+      - 88. 合并两个有序数组.md:  Algorithm/LC/88. 合并两个有序数组.md
+      - 154. 寻找旋转排序数组中的最小值 II.md:  Algorithm/LC/154. 寻找旋转排序数组中的最小值 II.md
+      - 153. 寻找旋转排序数组中的最小值.md:  Algorithm/LC/153. 寻找旋转排序数组中的最小值.md      
+      - 781. 森林中的兔子.md:  Algorithm/LC/781. 森林中的兔子.md
       - 1143. 最长公共子序列.md:  Algorithm/LC/1143. 最长公共子序列.md
       - 74. 搜索二维矩阵.md:  Algorithm/LC/74. 搜索二维矩阵.md
       - 190. 颠倒二进制位.md:  Algorithm/LC/190. 颠倒二进制位.md
