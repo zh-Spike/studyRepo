@@ -178,7 +178,7 @@ nav:
       - ACID&&事务隔离.md: Database/ACID&&事务隔离.md
       - Index.md: Database/Index.md
       - Index2.md: Database/Index2.md
-      - CURD.md: Database/CURD.md
+      - CRUD.md: Database/CRUD.md
       - 一条sql语句在mysql中如何执行的.md: Database/一条sql语句在mysql中如何执行的.md
     - 调优:
       - Optimize.md: Database/Optimize.md
@@ -191,7 +191,7 @@ nav:
     - RPC.md: Frameworks/RPC.md
     - 分布式理论.md: Frameworks/分布式理论.md
     - Security:
-      - Security.md: Frameworks\/Security.md
+      - Security.md: Frameworks/Security.md
       - JWT.md: Frameworks/JWT.md
       - SSO.md: Frameworks/SSO.md
     - MQ:
@@ -393,8 +393,9 @@ nav:
     - 骗分导论.md: Tricks/骗分导论.md
     - 八股的神.md: Tricks/八股的神.md
     - 复盘:
-      - PCG复盘.md: Tricks/PCG复盘.md
+      - PCG复盘1.md: Tricks/PCG复盘1.md
       - PCG复盘2.md: Tricks/PCG复盘2.md
+      - PCG复盘3.md: Tricks/PCG复盘3.md
   - Others:
     - LC周赛.md:  Algorithm/LC周赛.md
     - LC模板.md:  Algorithm/LC模板.md

@@ -88,35 +88,26 @@ SET [SESSION|GLOBAL] TRANSACTION ISOLATION LEVEL [READ UNCOMMITTED|READ COMMITTE
 
 #### 脏读(读未提交)
 
-<div align="center">  
-<img src="pics/2019-31-1脏读(读未提交)实例.png" width="800px"/>
-</div>
+![](pics/2019-31-1脏读实例.png)
 
 #### 避免脏读(读已提交)
 
-<div align="center">  
-<img src="pics/2019-31-2读已提交实例.png" width="800px"/>
-</div>
+![](pics/2019-31-2读已提交实例.png)
 
 #### 不可重复读
 
 还是刚才上面的读已提交的图，虽然避免了读未提交，但是却出现了，一个事务还没有结束，就发生了 不可重复读问题。
 
-<div align="center">  
-<img src="pics/2019-32-1不可重复读实例.png"/>
+![](pics/2019-32-1不可重复读实例.png)
 </div>
 
 #### 可重复读
 
-<div align="center">  
-<img src="pics/2019-33-2可重复读.png"/>
-</div>
+![](pics/2019-33-2可重复读.png)
 
 #### 防止幻读(可重复读)
 
-<div align="center">  
-<img src="pics/2019-33防止幻读(使用可重复读).png"/>
-</div>
+![](pics/2019-33防止幻读(使用可重复读)
 
 一个事务对数据库进行操作，这种操作的范围是数据库的全部行，然后第二个事务也在对这个数据库操作，这种操作可以是插入一行记录或删除一行记录，那么第一个是事务就会觉得自己出现了幻觉，怎么还有没有处理的记录呢? 或者 怎么多处理了一行记录呢?
 

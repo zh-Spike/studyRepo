@@ -4,7 +4,7 @@
 
 大家都用 docker 呢
 
-可能docker的端口要重新映射一下
+docker的端口要重新映射一下
 
 </font>
 
