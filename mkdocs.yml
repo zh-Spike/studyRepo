@@ -198,6 +198,8 @@ nav:
       - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
+      - 198. 打家劫舍.md:  Algorithm/LC/198. 打家劫舍.md
+      - 213. 打家劫舍 II.md:  Algorithm/LC/213. 打家劫舍 II.md
       - 179. 最大数.md:  Algorithm/LC/179. 最大数.md
       - 88. 合并两个有序数组.md:  Algorithm/LC/88. 合并两个有序数组.md
       - 154. 寻找旋转排序数组中的最小值 II.md:  Algorithm/LC/154. 寻找旋转排序数组中的最小值 II.md
