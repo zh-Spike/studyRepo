@@ -198,6 +198,7 @@ nav:
       - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
+      - 91. 解码方法.md:  Algorithm/LC/91. 解码方法.md
       - 27. 移除元素.md:  Algorithm/LC/27. 移除元素.md
       - 220. 存在重复元素 III.md:  Algorithm/LC/220. 存在重复元素 III.md
       - 198. 打家劫舍.md:  Algorithm/LC/198. 打家劫舍.md
