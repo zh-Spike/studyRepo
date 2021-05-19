@@ -27,10 +27,25 @@ Secondary NameNode(2nn)：每隔一段时间对NameNode元数据备份。
 
 ### Yarn 概述
 
+![](../pics/Screenshot%202021-05-19%20112607.png)
+
 1. ResourceManager（RM）：整个集群资源（内存、CPU等）的老大
 2. ApplicationMaster（AM）：单个任务运行的老大
 3. NodeManager（N M）：单个节点服务器资源老大
-4. Container：容器，相当一台独立的服务器，里面封装了
-任务运行所需要的资源，如内存、CPU、磁盘、网络等。
+4. Container：容器，相当一台独立的服务器，里面封装了任务运行所需要的资源，如内存、CPU、磁盘、网络等。
 
 类似于linkedlist，单个服务的Master可以挂载在后面的不同的串行任务
+
+### MapReduce 概述
+
+MapReduce 本质就是给影射+并行处理+归并的过程
+
+MapReduce 将计算过程分为两个阶段：Map 和 Reduce
+
+1. Map 阶段并行处理输入数据
+2. Reduce 阶段对 Map 结果进行汇总
+
+
+### 流程图
+
+![](../pics/Screenshot%202021-05-19%20114053.png)

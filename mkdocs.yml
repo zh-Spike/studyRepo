@@ -156,6 +156,8 @@ nav:
       - 高并发+.md: Java/高并发+.md
     - 高级特性:
       - Steam 流.md: Java/Steam 流.md
+    - Hadoop:
+      - HadoopDay1.md: Java/Hadoop学习/HadoopDay1.md
     - JVM:
       - JVM概.md: Java/JVM概.md 
       - JMM.md: Java/JMM.md 
