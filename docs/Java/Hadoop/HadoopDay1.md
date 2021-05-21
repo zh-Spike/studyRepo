@@ -49,3 +49,4 @@ MapReduce 将计算过程分为两个阶段：Map 和 Reduce
 ### 流程图
 
 ![](../pics/Screenshot%202021-05-19%20114053.png)
+
