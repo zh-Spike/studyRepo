@@ -509,3 +509,233 @@ export 和 import 主要用于两个 Hadoop 平台集群之间 Hive 表迁移。
 hive (default)> truncate table student;
 ```
 注意：Truncate 只能删除管理表，不能删除外部表中数据
+
+## 查询
+
+查表基本语法
+```SQL
+SELECT [ALL | DISTINCT] select_expr, select_expr, ...
+FROM table_reference
+[WHERE where_condition]
+[GROUP BY col_list]
+[ORDER BY col_list]
+[CLUSTER BY col_list
+| [DISTRIBUTE BY col_list] [SORT BY col_list]
+]
+[LIMIT number]
+```
+做两个表 部门表 员工表 `\t` 做分隔符
+### 建表
+```SQL
+create table if not exists dept(
+deptno int,
+dname string,
+loc int
+)
+row format delimited fields terminated by '\t';
+```
+```SQL
+create table if not exists emp(
+empno int,
+ename string,
+job string,
+mgr int,
+hiredate string,
+sal double,
+comm double,
+deptno int)
+row format delimited fields terminated by '\t';
+```
+```txt
+7369    MITH    CLERK   7902    1980-12-17      800.00          20
+7499    ALLEN   SALESMAN        7698    1981-2-20       600.00  300.00  30
+7521    WARD    SALESMAN        7698    1981-2-22       1250.00 500.00  30
+7566    JONES   MANAGER 7839    1981-4-2        2975.00         20
+7654    MARTIN  SALESMAN        7698    1981-9-28       1250.00 1400.00 30
+7698    BLAKE   MANAGER 7839    1981-5-1        2850.00         30
+7782    CLARK   MANAGER 7839    1981-6-9        2450.00         10
+7788    SCOTT   ANALYST 7566    1987-4-19       3000.00         20
+7839    KING    PRESIDENT               1981-11-17      5000.00         10
+7844    TURNER  SALESMAN        7698    1981-9-8        1500.00 0.00    30
+7876    ADAMS   CLERK   7788    1987-5-23       1100.00         20
+7900    JAMES   CLERK   7698    1981-12-3       950.00          30
+7902    FORD    ANALYST 7566    1981-12-3       3000.00         20
+7934    MILLER  CLERK   7782    1982-1-23       1300.00         10
+```
+```
+10      ACCOUNTING      1700
+20      RESEARCH        1800
+30      SALES   1900
+40      OPERATIONS      1700
+```
+
+### 导入数据 
+```SQL
+load data local inpath '/home/spike/data/emp.txt' into table emp;
+
+load data local inpath '/home/spike/data/dept.txt' into table dept;
+```
+### 基础查询
+1. 全表查询
+```SQL
+hive (default)> select * from emp;
+hive (default)> select empno,ename,job,mgr,hiredate,sal,comm,deptno from
+emp ;
+```
+2）选择特定列查询
+```SQL
+hive (default)> select empno, ename from emp;
+```
+注意：
+1. SQL 语言大小写不敏感。
+2. SQL 可以写在一行或者多行
+3. 关键字不能被缩写也不能分行
+4. 各子句一般要分行写。
+5. 使用缩进提高语句的可读性。Linux 里用 tab 会出现提示然后GG。四个空格 ok
+
+### 别名用法
+
+1. 重命名一个列
+2. 便于计算
+3. 紧跟列名，也可以在列名和别名之间加入关键字‘AS’
+
+查询名称和部门
+```SQL
+hive (default)> select ename AS name, deptno dn from emp;
+
+OK
+name	dn
+MITH	20
+ALLEN	30
+WARD	30
+JONES	20
+MARTIN	30
+BLAKE	30
+CLARK	10
+SCOTT	20
+KING	10
+TURNER	30
+ADAMS	20
+JAMES	30
+FORD	20
+MILLER	10
+Time taken: 0.124 seconds, Fetched: 14 row(s)
+```
+### 常见函数
+所有员工的薪水后加 1 显示。
+```SQL
+hive (default)> select sal +1 from emp;
+```
+
+1. 求总行数（count）
+```SQL
+hive (default)> select count(*) cnt from emp;
+```
+2. 求工资的最大值（max）
+```SQL
+hive (default)> select max(sal) max_sal from emp;
+```
+3. 求工资的最小值（min）
+```SQL
+hive (default)> select min(sal) min_sal from emp;
+```
+4. 求工资的总和（sum）
+```SQL
+hive (default)> select sum(sal) sum_sal from emp;
+```
+5. 求工资的平均值（avg）
+```SQL
+hive (default)> select avg(sal) avg_sal from emp;
+```
+### SQL 子句顺序
+
+1. FROM 子句, 组装来自不同数据源的数据
+2. WHERE 子句, 基于指定的条件对记录进行筛选
+3. GROUP BY 子句, 将数据划分为多个分组
+4. 使用聚合函数进行计算
+5. 使用 HAVING 子句筛选分组
+6. 计算所有的表达式
+7. 使用 ORDER BY 对结果集进行排序
+```
+在学生成绩表中 (暂记为 tb_Grade), 把 "考生姓名"内容不为空的记录按照 "考生姓名" 分组, 并且筛选分组结果, 选出 "总成绩" 大于 600 分的.
+```
+标准顺序的 SQL 语句为: 
+```SQL
+select 考生姓名, max(总成绩) as max总成绩
+from tb_Grade
+where 考生姓名 is not null
+group by 考生姓名
+having max(总成绩) > 600
+order by max总成绩
+```
+在上面的示例中 SQL 语句的执行顺序如下:
+1. 首先执行 FROM 子句, 从 tb_Grade 表组装数据源的数据
+2. 执行 WHERE 子句, 筛选 tb_Grade 表中所有数据不为 NULL 的数据
+3. 执行 GROUP BY 子句, 把 tb_Grade 表按 "学生姓名" 列进行分组
+4. 计算 max() 聚集函数, 按 "总成绩" 求出总成绩中最大的一些数值
+5. 执行 HAVING 子句, 筛选课程的总成绩大于 600 分的.
+6. 执行 ORDER BY 子句, 把最后的结果按 "Max 成绩" 进行排序.
+
+#### Limit 语句
+典型的查询会返回多行数据。LIMIT 子句用于限制返回的行数。
+```SQL
+hive (default)> select * from emp limit 5;
+```
+#### Where 语句
+1. 使用 WHERE 子句，将不满足条件的行过滤掉
+2. WHERE 子句紧随 FROM 子句
+3. 案例实操
+查询出薪水大于 1000 的所有员工
+```SQL
+hive (default)> select * from emp where sal >1000;
+```
+注意：where 子句中不能使用字段别名
+
+where,from,select的执行顺序，where中的不能用select的别名，因为where的执行顺序在select前面
+
+#### 比较运算符（Between/In/ Is Null）
+
+1. 查询出薪水等于 5000 的所有员工
+```SQL
+hive (default)> select * from emp where sal =5000;
+```
+2. 查询工资在 500 到 1000 的员工信息
+两个闭区间
+```SQL
+hive (default)> select * from emp where sal between 500 and 1000;
+```
+3. 查询 comm 为空的所有员工信息
+```SQL
+hive (default)> select * from emp where comm is null;
+```
+4. 查询工资是 1500 或 5000 的员工信息
+两个值，直接写死
+```SQL
+hive (default)> select * from emp where sal IN (1500, 5000);
+```
+
+#### Like 和 RLike
+1. 使用 LIKE 运算选择类似的值
+2. 选择条件可以包含字符或数字:
+```SQL
+% 代表零个或多个字符(任意个字符)。
+_ 代表一个字符。
+```
+3. RLIKE 子句
+```
+RLIKE 子句是 Hive 中这个功能的一个扩展，其可以通过 Java 的正则表达式这个更强大
+的语言来指定匹配条件。
+```
+4. 查找名字以 A 开头的员工信息
+```SQL
+hive (default)> select * from emp where ename LIKE 'A%';
+```
+5. 查找名字中第二个字母为 A 的员工信息
+```SQL
+hive (default)> select * from emp where ename LIKE '_A%';
+```
+6. 查找名字中带有 A 的员工信息
+```SQL
+hive (default)> select * from emp where ename RLIKE '[A]';
+```
+
