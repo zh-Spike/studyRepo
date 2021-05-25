@@ -156,13 +156,15 @@ nav:
       - 高并发+.md: Java/高并发+.md
     - 高级特性:
       - Steam 流.md: Java/Steam 流.md
-    - Hadoop:
-      - HadoopDay1.md: Java/Hadoop/HadoopDay1.md
-      - Hive.md: Java/Hadoop/Hive.md
     - JVM:
       - JVM概.md: Java/JVM概.md 
       - JMM.md: Java/JMM.md 
       - GC.md: Java/GC.md
+  - 实习:
+    - Hadoop:
+      - HadoopDay1.md: Hadoop/HadoopDay1.md
+      - Hive.md: Hadoop/Hive.md
+      - BugFixInHive.md: Hadoop/BugFixInHive.md
   - Network:
     - 基础:
       - Network.md: Network/Network.md
