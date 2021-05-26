@@ -50,3 +50,43 @@ MapReduce 将计算过程分为两个阶段：Map 和 Reduce
 
 ![](../pics/Screenshot%202021-05-19%20114053.png)
 
+### Hadoop 部署的坑
+
+#### 绝对路径 和 $ 的坑 
+hadoop in my Ubuntu as a single node cluster. This is my JAVA_HOME in my hadoop_env.sh
+
+Please use `Absolute Path` in hadoop_env.sh 
+
+It is define `JAVA_HOME` like this, so it can be wrong
+```sh
+export JAVA_HOME=${JAVA_HOME}
+```
+if you hard-code the path to your JVM installation it works
+```sh
+export JAVA_HOME=/usr/lib/jvm/java...
+```
+this resolution by environmental variable as is seems to fail. Hard-coding fixed the problem for me.
+
+#### 伪分布式存在着22端口和SSH服务没开
+实际上就是要配置一下 SSH 服务
+```sh
+apt install openssh-server
+```
+然后 设个空密码 
+
+#### HDFS namenode is not starting up
+停掉 yarn 和 HDFS
+```sh
+./sbin/stop-all.sh
+```
+
+DFS needs to be formatted. Just issue the following command after stopping all and then restart.
+
+format 一下 NN 节点，再跑`start-DFS.sh`和`start-yarn.sh` 
+```
+hadoop namenode -format
+```
+
+FORMAT command will check or create path/dfs/name, and initialize or reinitalize it. then running start-dfs.sh would run namenode, datanode, then namesecondary. when namenode check not exist path/dfs/name or not initialize, it occurs a fatal error, then exit. that's why namenode not start up.
+
+more details you can check HADOOP_COMMON/logs/XXX.namenode.log
