@@ -37,3 +37,17 @@ SELECT　/*+MAPJOIN（a）*/ FROM src1 x JOIN src2 y ON x.key = y.key;。
 ### 需求 
 
 然而他在local处理的时候，如果报错了是没有log的,他这个log是写在hadoop里的，我们最好能把Hadoop里的报错日志写到hive.log里
+
+
+## Client端仿Service段输出日志
+Service端任务调用Metastore API的时候打印相关日志，方便问题定位。
+
+### 思路 
+观察 HiveMeataStore 发现存在日志输出
+
+模仿这部分在Service服务调用前输出日志
+
+在Service端是有两个logInfo的输出的，`startFunction` 和 `endFunction`,通过学习 Hive 的架构发现 他也是RPC。那我只要在client.service调用的时候在他前后进行一个 startFunction 和 endFunction日志的打印就可以了。
+
+~~本来用的try catch finnally 来做日志的打印，但这样我把exception给捕获，那service端的本来的服务就不正常了，所以最后还是用 开一个tmp的办法来解决问题~~
+
