@@ -162,9 +162,9 @@ nav:
       - GC.md: Java/GC.md
   - 实习:
     - Hadoop:
-      - HadoopDay1.md: Hadoop/HadoopDay1.md
-      - Hive.md: Hadoop/Hive.md
-      - BugFixInHive.md: Hadoop/BugFixInHive.md
+      - HadoopDay1.md: 实习/Hadoop/HadoopDay1.md
+      - Hive.md: 实习/Hadoop/Hive.md
+      - BugFixInHive.md: 实习/Hadoop/BugFixInHive.md
   - Network:
     - 基础:
       - Network.md: Network/Network.md
