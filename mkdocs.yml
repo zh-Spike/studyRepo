@@ -204,6 +204,9 @@ nav:
       - MQ.md: Frameworks/MQ.md
   - Coding:
     - LeetCode:
+      - 342. 4的幂.md:  Algorithm/LC/342. 4的幂.md
+      - 1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？.md:  Algorithm/LC/1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？.md
+      - 231. 2的幂.md:  Algorithm/LC/231. 2 的幂.md
       - 91. 解码方法.md:  Algorithm/LC/91. 解码方法.md
       - 27. 移除元素.md:  Algorithm/LC/27. 移除元素.md
       - 220. 存在重复元素 III.md:  Algorithm/LC/220. 存在重复元素 III.md
