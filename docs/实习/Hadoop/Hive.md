@@ -212,6 +212,24 @@ hive 里查看 hdfs 文件系统
 ```shell
 hive(default)>dfs -ls /;
 ```
+
+### Hive 架构学习和beeline
+
+最近改了一些 service 和 client 的日志方面的东西
+
+发现对编译好的文件，我总是无法体现出我要的效果
+
+啊，发现其实hive是由三种启动模式的。
+
+之前看尚硅谷的课，就没说 我服了。
+
+三种模式 
+1. 内嵌式 内置的 derby
+2. 本地式 一个数据库对应 启动一个metastore 效率低 可有 MySQL
+3. remote 同意链接到一个metastore，metastore再处理对应的
+
+我这里主要是要做到 beeline 就是来连接 HiveService2，HiveService2在和metastore通信，metastore负责处理MySQL中的对应关系
+
 ## Hive 基础理论和语法学习
 
 ### 建表语法
@@ -739,3 +757,93 @@ hive (default)> select * from emp where ename LIKE '_A%';
 hive (default)> select * from emp where ename RLIKE '[A]';
 ```
 
+### 分区表
+
+#### 加载静态分区
+
+所谓静态分区指的是分区的字段值是由用户在加载数据的时候手动指定的。
+
+语法如下：
+```SQL
+load data [local] inpath ' ' into table tablename partition(分区字段='分区值'...);
+```
+Local表示数据是位于本地文件系统还是HDFS文件系统。关于load语句后续详细展开讲解。
+
+![](../pics/partition_part.png)
+
+![](../pics/partition_part2.png)
+
+![](../pics/multi_partition_part.png)
+
+#### 动态分区
+
+所谓动态分区指的是分区的字段值是基于查询结果（参数位置）自动推断出来的。核心语法就是insert+select。
+
+启用hive动态分区，需要在hive会话中设置两个参数：
+```SQL
+#是否开启动态分区功能
+set hive.exec.dynamic.partition=true;
+#指定动态分区模式，分为nonstick非严格模式和strict严格模式。#strict严格模式要求至少有一个分区为静态分区。
+set hive.exec.dynamic.partition.mode=nonstrict;
+```
+创建一张新的分区表，执行动态分区插入。
+
+动态分区插入时，分区值是根据查询返回字段位置自动推断的。
+
+分区表的注意事项: 
+
+1. 分区表不是建表的必要语法规则，是一种优化手段表，可选；
+2. 分区字段不能是表中已有的字段，不能重复；
+3. 分区字段是虚拟字段，其数据并不存储在底层的文件中；
+4. 分区字段值的确定来自于用户价值数据手动指定（静态分区）或者根据查询结果位置自动推断（动态分区）
+5. Hive支持多重分区，也就是说在分区的基础上继续分区，划分更加细粒度
+ 
+### 分桶表
+
+类似于桶排的意思
+
+分桶表也叫做桶表，叫法源自建表语法中bucket单词，是一种用于优化查询而设计的表类型。
+
+分桶表对应的数据文件在底层会被分解为若干个部分，通俗来说就是被拆分成若干个独立的小文件。
+
+在分桶时，要指定根据哪个字段将数据分为几桶（几个部分）。
+
+Hash然后取模用来分割小文件
+
+![](../pics/bucket0.png)
+
+CLUSTERED BY (col_name)表示根据哪个字段进行分；
+
+INTO N BUCKETS表示分为几桶（也就是几个部分）。
+
+需要注意的是，分桶的字段必须是表中已经存在的字段。
+```SQL
+--分桶表建表语句
+CREATE [EXTERNAL] TABLE [db_name.]table_name
+[(col_name data_type, ...)]
+CLUSTERED BY (col_name)
+INTO N BUCKETS;
+```
+#### 分桶表的好处
+
+1. 基于分桶字段查询时，减少全表扫描
+```SQL
+--基于分桶字段state查询来自于New York州的数据--不再需要进行全表扫描过滤--根据分桶的规则hash_function(New York) mod 5计算出分桶编号--查询指定分桶里面的数据 就可以找出结果  此时是分桶扫描而不是全表扫描
+select * 
+from t_usa_covid19_bucket where state="New York";
+```
+
+2. JOIN时可以提高MR程序效率，减少笛卡尔积数量
+根据join的字段对表进行分桶操作（比如下图中id是join的字段）
+
+提升效率是在 join 的字段加速
+
+```SQL
+a  join  b on a.id =b.id
+```
+![](../pics/bucket2.png)
+3. 分桶表数据进行高效抽样
+
+当数据量特别大时，对全体数据进行处理存在困难时，抽样就显得尤其重要了。抽样可以从被抽取的数据中估计和推断出整体的特性，是科学实验、质量检验、社会调查普遍采用的一种经济有效的工作和研究方法。
+
+### Hive 事务表
