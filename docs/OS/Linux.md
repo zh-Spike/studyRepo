@@ -1,10 +1,49 @@
 # 1. Linux
 
+### 常用排错看日志 
+
+看最后200行日志
+```shell
+tail -f -n 200 /tmp/root/hive.log
+```
+
+过滤特定端口
+```
+-a   或–all                             显示所有连线中的Socket。
+-A                                       <网络类型>或–<网络类型> 列出该网络类型连线中的相关地址。
+-c   或–continuous               持续列出网络状态。
+-C 或–cache                       显示路由器配置的快取信息。
+-e  或–extend                     显示网络其他相关信息。
+-F  或 –fib                          显示FIB。
+-g  或–groups                     显示多重广播功能群组组员名单。
+-h  或–help                        在线帮助。
+-i   或–interfaces                 显示网络界面信息表单。
+-l  或–listening                    显示监控中的服务器的Socket。
+-M   或–masquerade           显示伪装的网络连线。
+-n  或–numeric                   直接使用IP地址，而不通过域名服务器。
+-N   或–netlink或–symbolic  显示网络硬件外围设备的符号连接名称。
+-o  或–timers                      显示计时器。
+-p   或–programs                显示正在使用Socket的程序识别码和程序名称。
+-r  或–route                        显示 Routing Table。
+-s  或–statistice 显示网络工作信息统计表。
+-t  或–tcp 显示TCP 传输协议的连线状况。
+-u或–udp 显示UDP传输协议的连线状况。
+-v或–verbose 显示指令执行过程。
+-V 或–version 显示版本信息。
+-w或–raw 显示RAW传输协议的连线状况。
+-x或–unix 此参数的效果和指定”-A unix”参数相同。
+–ip或–inet 此参数的效果和指定”-A inet”参数相同。
+```
+这里是监听 metastore 端口
+```shell
+netstat nlap | grep 9083
+```
+
 ### 1.0.1. 关闭端口
-  ```
-  netstat -ano|findstr "8082"
-  taskkill  -F -PID 6832
-  ```
+```
+netstat -ano|findstr "8082"
+taskkill  -F -PID 6832
+```
   
 ### 1.0.2. kill pid与kill -9 pid的区别
  
