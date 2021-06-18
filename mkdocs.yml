@@ -407,6 +407,7 @@ nav:
       - NC41最长无重复子串.md:  Algorithm/NC/NC41最长无重复子串.md
   - Tricks:
     - VIM应用: Tricks/vim.md
+    - LaTeX 入门.md: Tricks/LaTeX 入门.md
     - RESTful API: Tricks/RESTful API.md
     - VMware Network DHCP.md: Tricks/VMware Network DHCP.md
     - 骗分导论.md: Tricks/骗分导论.md
