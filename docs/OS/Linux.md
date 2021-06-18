@@ -6,7 +6,6 @@
 ```shell
 tail -f -n 200 /tmp/root/hive.log
 ```
-
 过滤特定端口
 ```
 -a   或–all                             显示所有连线中的Socket。
@@ -36,7 +35,7 @@ tail -f -n 200 /tmp/root/hive.log
 ```
 这里是监听 metastore 端口
 ```shell
-netstat nlap | grep 9083
+netstat nlap | grep :9083
 ```
 
 ### 1.0.1. 关闭端口
