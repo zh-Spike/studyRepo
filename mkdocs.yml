@@ -51,6 +51,7 @@ extra_css:
   
 # Extensions
 markdown_extensions:
+  - admonition
   - abbr
   - attr_list
   - def_list
@@ -425,4 +426,5 @@ nav:
 
 # Google Analytics
 google_analytics:
-  - auto    
+  - 'UA-124485594-1'
+  - 'auto'
