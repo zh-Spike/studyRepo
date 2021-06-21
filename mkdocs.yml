@@ -43,6 +43,7 @@ extra:
       link: mailto:<zh-spike@outlook.com>
 
 extra_javascript:
+  - '_static/js/extra.js'
   - 'https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
 
 extra_css:
@@ -54,7 +55,6 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
-  - meta
   - md_in_html
   - admonition
   - codehilite:
@@ -62,7 +62,6 @@ markdown_extensions:
       linenums: true
   - def_list
   - footnotes
-  - meta
   - toc:
       permalink: true
   - pymdownx.arithmatex
