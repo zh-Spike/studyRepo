@@ -639,3 +639,41 @@ A join B on A.id=B.id and A.id=1
 
 即最终结果是倾斜的建处理之后的结果加上未倾斜的common join的结果。不可否认这是一种笨重的方法，最好的方法是直接指定那个键会倾斜，单独处理倾斜。当出现处理慢的时候我们排查是join慢还是group by慢，如果是join慢能不能用map join处理，如果是group by慢，能不能进行预聚合。
 
+#### SkewJoinResolver
+```java
+    @Override
+    public Object dispatch(Node nd, Stack<Node> stack, Object... nodeOutputs)
+        throws SemanticException {
+      Task<? extends Serializable> task = (Task<? extends Serializable>) nd;
+
+      if (!task.isMapRedTask() || task instanceof ConditionalTask
+          || ((MapredWork) task.getWork()).getReduceWork() == null) {
+        return null;
+      }
+
+      SkewJoinProcCtx skewJoinProcContext = new SkewJoinProcCtx(task,
+          physicalContext.getParseContext());
+
+      Map<Rule, NodeProcessor> opRules = new LinkedHashMap<Rule, NodeProcessor>();
+      opRules.put(new RuleRegExp("R1",
+        CommonJoinOperator.getOperatorName() + "%"),
+        SkewJoinProcFactory.getJoinProc());
+
+      // The dispatcher fires the processor corresponding to the closest
+      // matching rule and passes the context along
+      Dispatcher disp = new DefaultRuleDispatcher(SkewJoinProcFactory
+          .getDefaultProc(), opRules, skewJoinProcContext);
+      GraphWalker ogw = new DefaultGraphWalker(disp);
+
+      // iterator the reducer operator tree
+      ArrayList<Node> topNodes = new ArrayList<Node>();
+      if (((MapredWork)task.getWork()).getReduceWork() != null) {
+        topNodes.add(((MapredWork) task.getWork()).getReduceWork().getReducer());
+      }
+      ogw.startWalking(topNodes, null);
+      return null;
+    }
+```
+
+从TopNode开始   ~~dfs?~~
+把当前的信息放进去统计
