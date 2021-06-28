@@ -677,3 +677,29 @@ A join B on A.id=B.id and A.id=1
 
 从TopNode开始   ~~dfs?~~
 把当前的信息放进去统计
+### bugFix 
+
+#### HiveJoin 添加 warning
+
+首先不能直接在 conf 里面把区间通过 SizeVildator 直接写死，这样很多线上之前写的业务会直接报错
+
+那操作很简答，就是通过 hiveConf 找那几个参数的位置然后再在调用他们的位置直接通过LOG.warn的形式进行日志定位
+
+在自测环节注意 重新编译hive2.1.1时
+
+`Could not find artifact org.pentaho:pentaho-aggdesigner-algorithm:jar:5.1.5-jhyde`
+
+少包了
+
+解决方法
+
+maven根目录下的conf文件夹，然后修改setting.xml文件，添加
+```xml
+</mirror>
+    <mirror>
+    <id>aliyunmaven</id>
+    <mirrorOf>*</mirrorOf>
+    <name>spring-plugin</name>
+    <url>https://maven.aliyun.com/repository/spring-plugin</url>
+ </mirror>
+```
