@@ -51,3 +51,27 @@ Service端任务调用Metastore API的时候打印相关日志，方便问题定
 
 ~~本来用的try catch finnally 来做日志的打印，但这样我把exception给捕获，那service端的本来的服务就不正常了，所以最后还是用 开一个tmp的办法来解决问题~~
 
+## Hive MapJoin参数限制
+
+mapJoin时存在hive.mapjoin.smalltable.filesize和 hive.auto.convert.join.noconditionaltask.size 参数过大问题，添加warning日志和设置参数，方便排查
+### 解决方法
+
+寻找在conf里设置的参数，定位到具体方法，在把设置warning的地方的参数给抽出来放到 conf里。
+有些引用是在exec部分，没必要，只用在逻辑判断地方加就ok
+
+ex.
+```java
+long ThresholdOfSmallTblSizeSum = HiveConf.getLongVar(pCtx.getConf(),
+          HiveConf.ConfVars.HIVESMALLTABLESFILESIZE);
+      long maxSmallTblSizeSumRange = HiveConf.getLongVar(pCtx.getConf(),
+              HiveConf.ConfVars.HIVESMALLTABLESFILESIZERANGE);
+      if (ThresholdOfSmallTblSizeSum > maxSmallTblSizeSumRange){
+        LOG.warn("The HIVESMALLTABLESFILESIZE = "+ ThresholdOfSmallTblSizeSum +
+                " is greater than the maxSmallTblSizeSumRange = " + maxSmallTblSizeSumRange);
+      }
+```
+
+
+
+
+
