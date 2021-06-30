@@ -70,7 +70,90 @@ long ThresholdOfSmallTblSizeSum = HiveConf.getLongVar(pCtx.getConf(),
                 " is greater than the maxSmallTblSizeSumRange = " + maxSmallTblSizeSumRange);
       }
 ```
+## 日志清洗脚本
 
+在线上环境中 总是遇到 partition 过多的问题。
+
+定位出 partition 超过 waring 界限的线程，这个线程的 start end 和他所操作的 db 和 tb，梳理。
+
+```python
+import re
+
+f = open("/home/hadoop/hive/logs/xxxxx.log")
+
+# threadNum
+p1 = re.compile(r"[[](.*?)[]]", re.S)
+# db tb
+p2 = re.compile(r"(?<= : ).*$", re.S)
+# partitionNum
+p3 = re.compile(r"(?<=get_partitions )\d+",re.S)
+# partitionExpr
+p4 = re.compile(r"(?<=get_partitions_by_expr )\d+", re.S)
+
+lines = f.readlines()
+n = 0
+list=[]
+res = []
+dic = {}
+
+for line in lines:
+    n = n + 1
+    thread = re.findall(p1,line)
+    list.append(thread)
+    list.append(n)
+    if "more than" in line:
+        # 定位到错误行
+        # print(n)
+        # 正则得出错误的线程
+        # 同线程 向上找2个 向下找1个 下是连着的
+        # 因为log是时间顺序的 所以直接逆序查找即可     
+        wrongThread = re.findall(p1,line)
+        # 如果只要 
+        flag = 0
+        for i in range(len(list)-1,-1,-1):
+            if flag == 2:
+                flag = 0
+                break
+            if  list[i] == wrongThread:
+                ans = list[i+1]
+                dic[ans] = wrongThread
+                # print(ans)
+                res.append(ans)
+                flag = flag + 1  
+        # res.append(n + 1) 
+
+#顺序 3 2 1 4 , sort一下
+res.sort()
+# 从 0 行开始打印
+resDIC = []
+print(res)
+for i in res:
+    # print( "Log line number = ", i)
+    # print(lines[i-1])
+    resDIC.append(dic[i])
+    # print(dic[i])
+
+for i in range(len(resDIC)):
+    for j in range(i+1,len(resDIC)):
+        if(resDIC[i] == resDIC[j]):
+            # print(resDIC[i])
+            # print(i)
+            li = res[i]
+            lj = res[j]
+            if re.findall(p2,lines[li - 1]) != []:
+                st1 = re.findall(p2,lines[li -1])[0]
+                print(st1.strip()),
+            if re.findall(p3,lines[lj - 1]) != []:
+                st2 = re.findall(p3,lines[lj-1])[0]
+                print("partitions=" + st2)
+            if re.findall(p4,lines[lj - 1]) != []:
+                st2 = re.findall(p4,lines[lj-1])[0]
+                print("partitions=" + st2)
+# print(res)
+
+f.close()
+
+```
 
 
 
