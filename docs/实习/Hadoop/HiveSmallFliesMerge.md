@@ -9,7 +9,7 @@
 
 1. Hive 的数据还是存在 HDFS 上的，小文件太多，容易在文件存储端造成瓶颈，给 NN 带来压力从而影响处理效率
 
-2. 要对这些小文件也进行 MR，效率低
+2. 在MR任务时，也会对这些小文件也进行 map，效率低
 
 ## 合并方案
 1. Hive 调参，开设置,他这里好多种类的参数
@@ -17,7 +17,7 @@
    1. 用appendToFile合并文件，或者getmerge合并文件到本地，然后在传hdfs。配合bash操作，还是可行的。该方案局限性较大。
 3. 针对特定的文件格式，存在原生的指令
    1. ORC 用 CONCATENATE
-   2. Parquet 用 parquet-tools
+   2. Parquet 用 parquet-tools merge
    3. 把现有数据转化为 SequnceFile
       1. ![](../pics/seq.jpg)当需要维护原始文件名时，常见的方法是使用Sequence文件。 在此解决方案中，文件名作为key保存在sequence文件中，然后文件内容会作为value保存。下图给出将一些小文件存储为sequence文件的示例：
       2. ![](../pics/seq2.jpg)
@@ -31,7 +31,7 @@
 ### Hive 开参数
 输入端设置 CombineFileInputFormat 参数 
 
-但这个东西 他只是执行的时候先合并，并不会落盘
+但这个东西 他只是执行的时候先合并，对 NN 并无帮助
 ```SQL
 -- 每个Map最大输入大小(这个值决定了合并后文件的数量)
 set mapred.max.split.size=256000000;  
@@ -59,7 +59,7 @@ set hive.merge.smallfiles.avgsize=16000000;
 
 强制文件合并的方法是指定Hive作业的Reduce数量。由于每个reducer都会生成一个文件，所以reducer的数量也就代表了最后生成的文件数量。
 
-小于多少大小的一张表直接 reduce 1
+小于多少大小的一张表直接 reduce by 1
 
 由于上述因素，只有在你至少粗略地知道查询生成的数据量时才使用此方法。如果查询结果生成的文件会非常小（小于256MB），我们只使用1个reduce也还不错。
 ```SQL
@@ -116,8 +116,6 @@ hadoop jar parquet-tools-1.9.0.jar merge <input> <output>
 ```
 其中，input是源parquet文件或目录，而output是合并原始内容的目标parquet文件，此合并命令不会删除或覆盖原始文件。因此，它需要手动创建一个临时目录，并用压缩后的文件替换原始的小文件，以使Big SQL或Apache Hive知道该文件。
 
-另外，不管文件的存储格式如何，要考虑的解决方案是重新创建表并通过执行INSERT…SELECT进行压缩。
-
 ### INSERT OVERWRITE 
 
-就相当于重新搞新表
+就相当于重新搞新表，重写
