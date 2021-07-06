@@ -10,9 +10,28 @@
 1. Hive 的数据还是存在 HDFS 上的，小文件太多，容易在文件存储端造成瓶颈，给 NN 带来压力从而影响处理效率
 
 2. 要对这些小文件也进行 MR，效率低
-   
-### Hive 自带解决方案
-输入端设置
+
+## 合并方案
+1. Hive 调参，开设置,他这里好多种类的参数
+2. 定期从hdfs上拖小文件下来再合并
+   1. 用appendToFile合并文件，或者getmerge合并文件到本地，然后在传hdfs。配合bash操作，还是可行的。该方案局限性较大。
+3. 针对特定的文件格式，存在原生的指令
+   1. ORC 用 CONCATENATE
+   2. Parquet 用 parquet-tools
+   3. 把现有数据转化为 SequnceFile
+      1. ![](../pics/seq.jpg)当需要维护原始文件名时，常见的方法是使用Sequence文件。 在此解决方案中，文件名作为key保存在sequence文件中，然后文件内容会作为value保存。下图给出将一些小文件存储为sequence文件的示例：
+      2. ![](../pics/seq2.jpg)
+      3. 如果一个sequence文件包含10000个小文件，则同时会包含10000个key在一个文件中。sequence文件支持块压缩，并且是可被拆分的。这样MapReduce作业在处理这个sequence文件时，只需要为每个128MB的block启动一个map任务，而不是每个小文件启动一个map任务。当你在同时抽取数百个或者数千个小文件，并且需要保留原始文件名时，这是非常不错的方案。
+      4. 但是，如果你一次仅抽取少量的小文件到HDFS，则sequence文件的方法也不太可行，因为sequence文件是不可变的，无法追加。比如3个10MB文件将产生1个30MB的sequence文件，根据本文前面的定义，这仍然是一个小文件。另外一个问题是如果需要检索sequence文件中的文件名列表则需要遍历整个文件。
+4. Hadoop 自带归档 har
+5. FileCrush 别人造的轮子，试了好像没用？
+6. 用 Hbase
+7. 并行 INSERT OVERWRITE 慢慢搞
+8. Flume + kafka ？
+### Hive 开参数
+输入端设置 CombineFileInputFormat 参数 
+
+但这个东西 他只是执行的时候先合并，并不会落盘
 ```SQL
 -- 每个Map最大输入大小(这个值决定了合并后文件的数量)
 set mapred.max.split.size=256000000;  
@@ -24,7 +43,7 @@ set mapred.min.split.size.per.rack=100000000;
 set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat; 
 ```
 
-输出端设置
+输出端设置 打开动态合并
 ```SQL
 -- 如果hive的程序，只有maptask，将MapTask产生的所有小文件进行合并
 set hive.merge.mapfiles=true;
@@ -36,11 +55,29 @@ set hive.merge.size.per.task=256000000;
 set hive.merge.smallfiles.avgsize=16000000;
 ```
 
+强制文件合并
+
+强制文件合并的方法是指定Hive作业的Reduce数量。由于每个reducer都会生成一个文件，所以reducer的数量也就代表了最后生成的文件数量。
+
+小于多少大小的一张表直接 reduce 1
+
+由于上述因素，只有在你至少粗略地知道查询生成的数据量时才使用此方法。如果查询结果生成的文件会非常小（小于256MB），我们只使用1个reduce也还不错。
+```SQL
+# ONLY ONE OF THE PARAMETERS BELOW SHOULD BE USED
+
+# Limit the maximum number of reducers
+SET hive.exec.reducers.max = <number>;
+
+# Set a fixed number of reducers
+SET mapreduce.job.reduces = <number>;
+```
 ### 数据归档
 
 #### 数据归档解释
 
 HDP 内置一个 hadoop archive，可以把文件归并成较大的文件，归档后创建一个 data.har, 里面放索引和数据。索引记录归并前文件在归并后的位置。
+
+![](../pics/har.png)
 
 #### 操作
 ```SQL
@@ -81,13 +118,6 @@ hadoop jar parquet-tools-1.9.0.jar merge <input> <output>
 
 另外，不管文件的存储格式如何，要考虑的解决方案是重新创建表并通过执行INSERT…SELECT进行压缩。
 
-### 使用INSERT…SELECT合并文件
+### INSERT OVERWRITE 
 
-通过使用`INSERT…SELECT`语法直接创建一个新表作为原始表的副本来压缩效率低下的拆分数据，此过程将根据插入的并行度将数据重新组织为相对少量的较大文件。
-
-以下是一个如何创建新表，然后在Big SQL中插入旧表中的数据的示例：
-```SQL
-CREATE TABLE new_table LIKE old_table;
-INSERT INTO new_table select * from old_table;
-```
-该解决方案还允许通过将数据分区复制到新表中，删除原始分区并插入新的压缩分区来合并单个分区中的文件。
+就相当于重新搞新表
