@@ -14,7 +14,7 @@
 ## 合并方案
 1. Hive 调参，开设置,他这里好多种类的参数
 2. 定期从hdfs上拖小文件下来再合并
-   1. 用appendToFile合并文件，或者getmerge合并文件到本地，然后在传hdfs。配合bash操作，还是可行的。该方案局限性较大。
+   1. 用appendToFile合并文件，或者getmerge合并文件到本地，然后在传hdfs。配合bash操作，还是可行的。该方案局限性较大,对 ORC、Parquet、Sequence 没办法。
 3. 针对特定的文件格式，存在原生的指令
    1. ORC 用 CONCATENATE
    2. Parquet 用 parquet-tools merge
