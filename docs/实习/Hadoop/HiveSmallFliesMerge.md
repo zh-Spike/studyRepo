@@ -119,3 +119,13 @@ hadoop jar parquet-tools-1.9.0.jar merge <input> <output>
 ### INSERT OVERWRITE 
 
 就相当于重新搞新表，重写
+
+## 解决方法
+
+参考几家的解决方法。一般都是开一个并行度为1的任务。
+
+### 调研 
+
+首先先是调研有多少小文件且预估性能预计提升多少。
+
+我这边是 选择了 HDFS 
