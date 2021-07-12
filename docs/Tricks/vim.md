@@ -55,3 +55,7 @@
    2. 使用“v”切换到可视模式
    3. 再用“G”将光标移动到文档尾部（相当于全选）
    4. 最后使用“=”，即可完成整个文档的自动排版。
+
+5. set ff=unix
+    
+    Open your file in Vim and, in normal mode, type :set ff? to see what the file format is. If it is DOS, then type :set ff=unix to change it to Unix
