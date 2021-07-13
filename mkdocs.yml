@@ -170,6 +170,7 @@ nav:
       - Join.md: 实习/Hadoop/Join.md
       - HiveSmallFliesMerge.md: 实习/Hadoop/HiveSmallFliesMerge.md
       - BugFixInHive.md: 实习/Hadoop/BugFixInHive.md
+    - gitMerge流程.md: 实习/gitMerge流程.md
     - 杂.md: 实习/杂.md
   - Network:
     - 基础:
