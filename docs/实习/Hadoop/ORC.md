@@ -6,9 +6,9 @@ ORC 文件 split 时遇到的一切奇怪的问题。这边把他分析一下。
 
 ![](../pics/OrcFileLayout.png)
 
-Strip 的形式，它主要就是用来一次跳多条数据
+Stripe 的形式，它主要就是用来一次跳多条数据
 
-ORC 文件中的每个条带都包含 index索引 、RowData数据 和 Footer条带页脚
+ORC 文件中的每个条带都包含 index 索引 、RowData 数据 和 Footer 条带页脚
 
 页脚包含流位置的目录。行数据用于表扫描。
 
