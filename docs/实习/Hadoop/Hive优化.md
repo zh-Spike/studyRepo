@@ -1,4 +1,10 @@
 # Hive 优化
+
+## 日常排查指令
+
+```
+ps -ef | grep processprocessname
+```
 ## 日志记录
 ### 查看 SQL 执行时间和计算资源占用
 
